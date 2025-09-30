@@ -1,0 +1,5 @@
+fontSize
+
+H2 = 38px
+H3 = 16px
+paragraph = 16px

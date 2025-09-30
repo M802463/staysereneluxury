@@ -1,0 +1,300 @@
+nav {
+    width: 100%;
+    /* height: 100px; */
+    background-color: #112e2e;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+}
+
+nav section:nth-child(1) {
+    padding: 15px 0;
+    border-bottom: 1px solid #2F5C5C;
+}
+
+#header {
+    transition: all .5s ease;
+}
+
+#header.active {
+    position: fixed;
+    top: -100%;
+    transition: all .3s linear;
+}
+
+.top-bar-left {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-bar-left P,
+.top-bar-right ul li p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 140%;
+    margin: 0;
+}
+
+.top-bar-right {
+    width: fit-content;
+}
+
+.top-bar-right ul {
+    display: flex;
+    gap: 20px;
+}
+
+.top-bar-right ul li:first-child {
+    border-left: unset;
+    padding-left: unset;
+}
+
+.top-bar-right ul li {
+    border-left: 1px solid #fff;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+i {
+    font-size: 15px;
+    color: #bf930f;
+}
+
+.menu,
+.booking {
+    width: 200px;
+    height: 100px;
+    background-color: #184040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.rooms,
+.hotel {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+.menu p,
+.rooms p,
+.hotel p,
+.booking p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 200px;
+    height: 125px;
+    mask-image: url(../images/logo-shape.png);
+    background-image: url(../images/logo-bg-shape.png);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #184040;
+    padding: 15px 0 35px;
+    display: flex;
+}
+
+#side-bar {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000000e6;
+    z-index: 10;
+    transform: translateX(-100%);
+}
+
+.side-nav {
+    width: 500px;
+    height: 100%;
+    background-color: #184040;
+    z-index: 1;
+    padding: 50px;
+    position: relative;
+    transform: translateX(-100%);
+    overflow-y: scroll;
+}
+
+.menu-close {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #bf930f;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.menu-close::before {
+    content: "";
+    position: absolute;
+    inset: -7px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    transition: all .3s linear;
+}
+
+.menu-close i {
+    color: #fff;
+    font-size: 16px;
+    rotate: 0deg;
+    transition: all .3s linear;
+}
+
+.menu-close:hover {
+    background-color: #fff;
+}
+
+.menu-close:hover i {
+    color: #bf930f;
+    rotate: 90deg;
+}
+
+.menu-close:hover::before {
+    border: 3px solid #bf930f;
+}
+
+
+.menu-cover {
+    width: 100%;
+    height: 100%;
+    background-color: #184040;
+}
+
+.menu-logo {
+    width: 150px;
+}
+
+.menu-cover .menu-list {
+    width: 100%;
+    height: 100%;
+    margin-top: 35px;
+}
+
+.menu-cover>.menu-list>ul {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-cover .menu-list ul li {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+    line-height: 140%;
+    margin: 0;
+    text-transform: capitalize;
+    border-bottom: 1px solid #2F5C5C;
+}
+
+.menu-cover .menu-list ul li a {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0px;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+}
+
+.menu-cover .menu-list ul li ul li {
+    padding-left: 20px;
+}
+
+.menu-cover .menu-list ul li ul li:last-child {
+    border-bottom: unset;
+}
+
+.menu-cover .menu-list ul li ul li:first-child {
+    border-top: 1px solid #2F5C5C;
+}
+
+.menu-cover .menu-list>ul>li {
+    position: relative;
+}
+
+.menu-cover .menu-list ul>li:has(> ul > li)::before {
+    font-family: "Font Awesome 7 Free" !important;
+    content: "\2b";
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    transform: translate(0%, 0%);
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 11px;
+    display: inline-block;
+    line-height: 25px;
+    color: #184040;
+    text-align: center;
+    font-weight: 900;
+    rotate: 0deg;
+    border: 3px solid transparent;
+    transition: all .3s linear;
+}
+
+.menu-cover .menu-list ul>li.active::before {
+    rotate: 135deg;
+    border: 3px solid #bf930f;
+}
+
+.rooms::before, .hotel::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #bf930f;
+    right: 0;
+    bottom: 0;
+    transition: all .3s linear;
+}
+
+.rooms:hover::before, .hotel:hover::before {
+    left: 0;
+    right: unset;
+    width: 100%;
+}
+
+.rooms>i, .hotel>i {
+    transition: all .4s ease;
+}
+.rooms:hover>i, .hotel:hover>i {
+    rotate: 180deg;
+}
+
+#time {
+    text-transform: uppercase;
+}

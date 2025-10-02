@@ -24,6 +24,8 @@
         </div>
     </div>
 
+    <?php include "includes/footer.php"; ?>
+
     <script src="assets/js/local-cdn/gsap.min.js"></script>
     <script src="assets/js/local-cdn/scrollTrigger.min.js"></script>
     <!-- ScrollSmoother requires ScrollTrigger -->

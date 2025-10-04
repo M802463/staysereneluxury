@@ -5,25 +5,25 @@
 				<div class="social-icon">
 					<img src="assets/images/facebook.png" alt="" />
 				</div>
-				<a href="https://www.facebook.com/staysereneluxury/">FACEBOOK</a>
+				<a target="_blank" href="https://www.facebook.com/staysereneluxury/">FACEBOOK</a>
 			</div>
 			<div class="col_sm4_4">
 				<div class="social-icon">
 					<img src="assets/images/instagram.png" alt="" />
 				</div>
-				<a href="https://www.instagram.com/staysereneluxury/">INSTAGRAM</a>
+				<a target="_blank" href="https://www.instagram.com/staysereneluxury/">INSTAGRAM</a>
 			</div>
 			<div class="col_sm4_4">
 				<div class="social-icon">
 					<img src="assets/images/twitter.png" alt="" />
 				</div>
-				<a href="#">TWITTER</a>
+				<a target="_blank" href="#">TWITTER</a>
 			</div>
 			<div class="col_sm4_4">
 				<div class="social-icon">
 					<img src="assets/images/linkedin.png" alt="" />
 				</div>
-				<a href="#">LINKEDIN</a>
+				<a target="_blank" href="#">LINKEDIN</a>
 			</div>
 			<div class="clear"></div>
 		</div>
@@ -59,31 +59,27 @@
 						<li>
 							<img src="assets/images/right-arrow.png" alt="" /><a href="#booking">Request a Booking</a>
 						</li>
-						<li>
-							<img src="assets/images/right-arrow.png" alt="" /><a href="#faq">FAQ</a>
-						</li>
+					
 					</ul>
 				</div>
 
 				<!-- Explore Column -->
 				<div class="footer-column2">
-					<h3>Explore</h3>
+					<h3>Villas</h3>
 					<ul>
 						<li>
-							<img src="assets/images/right-arrow.png" alt="" /><a href="#offers">All Offers</a>
+							<img src="assets/images/right-arrow.png" alt="" /><a href="tranqvilla.php">Tranqvilla</a>
 						</li>
 						<li>
-							<img src="assets/images/right-arrow.png" alt="" /><a href="#rooms">Our Rooms</a>
+							<img src="assets/images/right-arrow.png" alt="" /><a href="midnight-alpine.php">Midnight Alpine – A Shape Villa</a>
 						</li>
 						<li>
-							<img src="assets/images/right-arrow.png" alt="" /><a href="#gallery">Our Gallery</a>
+							<img src="assets/images/right-arrow.png" alt="" /><a href="shamiyana-luxury-tent-i.php">Shamiyana Luxury Tent I</a>
 						</li>
 						<li>
-							<img src="assets/images/right-arrow.png" alt="" /><a href="#reviews">Client Reviews</a>
+							<img src="assets/images/right-arrow.png" alt="" /><a href="shamiyana-luxury-tent-ii.php">Shamiyana Luxury Tent II</a>
 						</li>
-						<li>
-							<img src="assets/images/right-arrow.png" alt="" /><a href="#neighborhood">Neighborhood</a>
-						</li>
+					
 					</ul>
 				</div>
 
@@ -156,9 +152,10 @@
 			<div class="copyright-content">
 				<p>All rights reserved — 2025 © Stay Serene LLP</p>
 				<div class="footer-links">
-					<a href="#terms">Terms of service</a>
-					<a href="#privacy">Privacy policy</a>
-					<a href="#cookies">Cookies</a>
+					<a href="rules-and-regulation.php">Rules and Regulation</a>
+					<a href="cancellation-policy.php">Cancellation Policy</a>
+					<a href="privacy-policy.php"> Privacy Policy</a>
+					<a href="terms-and-conditions.php"> Terms & Conditions</a>
 				</div>
 			</div>
 		</div>

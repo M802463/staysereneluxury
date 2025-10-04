@@ -15,7 +15,7 @@ let lastScroll = 0;
 window.addEventListener('scroll', () => {
     let scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
 
-    if (scrollTop > 200) {
+    if (scrollTop > 155) {
         // yeh tabhi chalega jab 400px se upar scroll karoge
         if (scrollTop > lastScroll) {
             // scroll down

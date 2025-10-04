@@ -1,54 +1,3 @@
-<div class="col_sm1">
-	<div class="top">
-		<div class="room-suit-head margin">
-			<h3>BLOG & NEWS</h3>
-			<h2>
-				Room Refresh Service <br />
-				Morning Wake-Up Call Tour
-			</h2>
-		</div>
-		<div class="col_sm2 blog_post">
-			<div class="blog_img">
-				<img src="assets/images/blog_3_1.jpg" alt="" class="img" />
-			</div>
-			<div class="blog_content">
-				<h3>Luxury twin bed room of rotal sign throughout the hotel</h3>
-				<p>
-					Ready to book your vacation? Our hotel booking category provides
-					an extensive array of choices, from lavish resorts to economical
-					lodgings, guaranteeing a delightful and unforgettable experience
-					without breaking the bank.
-				</p>
-				<br />
-				<br />
-				<a class="read_mor" href="#readmore">EXPLORE MORE </a>
-			</div>
-		</div>
-		<div class="col_sm2 blog_post">
-			<div class="blog_img">
-				<img src="assets/images/blog_3_2.jpg" alt="" class="img" />
-			</div>
-			<div class="blog_content">
-				<h3>Luxury twin bed room of rotal sign throughout the hotel</h3>
-				<p>
-					Ready to book your vacation? Our hotel booking category provides
-					an extensive array of choices, from lavish resorts to economical
-					lodgings, guaranteeing a delightful and unforgettable experience
-					without breaking the bank.
-				</p>
-				<br />
-				<br />
-				<a class="read_mor" href="#readmore">EXPLORE MORE </a>
-			</div>
-		</div>
-
-		<div class="clear"></div>
-		<br /><br />
-	</div>
-
-	<div class="clear"></div>
-</div>
-
 <footer class="footer" id="footer">
 	<div class="top">
 		<div class="social-container">
@@ -56,26 +5,27 @@
 				<div class="social-icon">
 					<img src="assets/images/facebook.png" alt="" />
 				</div>
-				<a href="">FACEBOOK</a>
+				<a href="https://www.facebook.com/staysereneluxury/">FACEBOOK</a>
 			</div>
 			<div class="col_sm4_4">
 				<div class="social-icon">
 					<img src="assets/images/instagram.png" alt="" />
 				</div>
-				<a href="">INSTAGRAM</a>
+				<a href="https://www.instagram.com/staysereneluxury/">INSTAGRAM</a>
 			</div>
 			<div class="col_sm4_4">
 				<div class="social-icon">
 					<img src="assets/images/twitter.png" alt="" />
 				</div>
-				<a href="">TWITTER</a>
+				<a href="#">TWITTER</a>
 			</div>
 			<div class="col_sm4_4">
 				<div class="social-icon">
 					<img src="assets/images/linkedin.png" alt="" />
 				</div>
-				<a href="">LINKEDIN</a>
+				<a href="#">LINKEDIN</a>
 			</div>
+			<div class="clear"></div>
 		</div>
 
 		<div class="clear"></div>
@@ -84,7 +34,7 @@
 				<!-- About Rotal Column -->
 				<div class="footer-column1">
 					<div class="ftr-logo">
-						<img src="assets/images/logo.svg" alt="" />
+						<img src="../assets/images/logo.png" alt="" />
 					</div>
 					<p>
 						Inspired by luxury lifestyle and pristine nature, Stay Serene
@@ -147,21 +97,20 @@
 							</div>
 
 							<p>
-								789 Inner Lane, Holy park,<br />
-								California, USA
+								Stay Serene Luxury Villas, near Aai Tulja Bhavana Mata Mandir, Village Kalambhe, Post Tulai, Taluka Murbad, Thane, Maharashtra, India – 421401
 							</p>
 						</div>
 						<div class="contact-item">
 							<div class="icon-location">
 								<img src="assets/images/telephone.png" alt="" />
 							</div>
-							<p>+01 234 567 890<br />+09 876 543 210</p>
+							<a href="tel:+91 93210 96767">+91 93210 96767</a>
 						</div>
 						<div class="contact-item">
 							<div class="icon-location">
 								<img src="assets/images/mail.png" alt="" />
 							</div>
-							<p>mailinfo00@rotal.com<br />support24@rotal.com</p>
+							<a href="mailto:reservations@staysereneluxury.com">reservations@staysereneluxury.com</a>
 						</div>
 					</div>
 				</div>
@@ -205,7 +154,7 @@
 		</div>
 		<div class="footer-bottom2">
 			<div class="copyright-content">
-				<p>Copyright &copy; 2025 Rotal. All Rights Reserved.</p>
+				<p>All rights reserved — 2025 © Stay Serene LLP</p>
 				<div class="footer-links">
 					<a href="#terms">Terms of service</a>
 					<a href="#privacy">Privacy policy</a>

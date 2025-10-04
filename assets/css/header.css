@@ -1,7 +1,7 @@
 nav {
     width: 100%;
     /* height: 100px; */
-    background-color: #112e2e;
+    background-color: #fff;
     position: fixed;
     top: 0;
     z-index: 9;
@@ -9,7 +9,7 @@ nav {
 
 nav section:nth-child(1) {
     padding: 15px 0;
-    border-bottom: 1px solid #2F5C5C;
+    border-bottom: 1px solid var(--color-cream);
 }
 
 #header {
@@ -30,11 +30,13 @@ nav section:nth-child(1) {
 }
 
 .top-bar-left P,
-.top-bar-right ul li p {
+.top-bar-left a,
+.top-bar-right ul li p,
+.top-bar-right ul li a {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #fff;
+    color: var(--color-dark);
     line-height: 140%;
     margin: 0;
 }
@@ -54,7 +56,7 @@ nav section:nth-child(1) {
 }
 
 .top-bar-right ul li {
-    border-left: 1px solid #fff;
+    border-left: 1px solid var(--color-cream);
     padding-left: 20px;
     display: flex;
     align-items: center;
@@ -63,14 +65,14 @@ nav section:nth-child(1) {
 
 i {
     font-size: 15px;
-    color: #bf930f;
+    color: var(--color-gold);
 }
 
 .menu,
 .booking {
     width: 200px;
     height: 100px;
-    background-color: #184040;
+    background-color: var(--color-cream);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,7 +98,7 @@ i {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 16px;
     font-weight: 500;
-    color: #fff;
+    color: var(--color-dark);
     line-height: 140%;
     text-transform: uppercase;
     margin: 0;
@@ -115,16 +117,21 @@ i {
     mask-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: #184040;
-    padding: 15px 0 35px;
+    background-color: var(--color-cream);
+    padding: 8px 0 25px;
     display: flex;
+}
+
+#logo>img {
+    width: fit-content;
+    margin: 0 auto;
 }
 
 #side-bar {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #000000e6;
+    background-color: #ffffffdf;
     z-index: 10;
     transform: translateX(-100%);
 }
@@ -132,7 +139,7 @@ i {
 .side-nav {
     width: 500px;
     height: 100%;
-    background-color: #184040;
+    background-color: #fff;
     z-index: 1;
     padding: 50px;
     position: relative;
@@ -144,7 +151,7 @@ i {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #bf930f;
+    background-color: var(--color-gold);
     position: absolute;
     top: 20px;
     right: 20px;
@@ -160,7 +167,7 @@ i {
     content: "";
     position: absolute;
     inset: -7px;
-    border: 3px solid #ffffff;
+    border: 3px solid var(--color-maroon);
     border-radius: 50%;
     transition: all .3s linear;
 }
@@ -177,19 +184,19 @@ i {
 }
 
 .menu-close:hover i {
-    color: #bf930f;
+    color: var(--color-maroon);
     rotate: 90deg;
 }
 
 .menu-close:hover::before {
-    border: 3px solid #bf930f;
+    border: 3px solid var(--color-gold);
 }
 
 
 .menu-cover {
     width: 100%;
     height: 100%;
-    background-color: #184040;
+    background-color: #fff;
 }
 
 .menu-logo {
@@ -216,16 +223,17 @@ i {
     line-height: 140%;
     margin: 0;
     text-transform: capitalize;
-    border-bottom: 1px solid #2F5C5C;
+    border-bottom: 1px solid var(--color-cream);
 }
 
 .menu-cover .menu-list ul li a {
     width: 100%;
     display: inline-block;
     padding: 10px 0px;
-    color: #fff;
+    color: var(--color-dark);
     z-index: 1;
     position: relative;
+    cursor: pointer;
 }
 
 .menu-cover .menu-list ul li ul li {
@@ -237,7 +245,7 @@ i {
 }
 
 .menu-cover .menu-list ul li ul li:first-child {
-    border-top: 1px solid #2F5C5C;
+    border-top: 1px solid var(--color-cream);
 }
 
 .menu-cover .menu-list>ul>li {
@@ -253,12 +261,12 @@ i {
     transform: translate(0%, 0%);
     width: 25px;
     height: 25px;
-    background-color: #fff;
+    background-color: var(--color-gold);
     border-radius: 50%;
     font-size: 11px;
     display: inline-block;
     line-height: 25px;
-    color: #184040;
+    color: var(--color-cream);
     text-align: center;
     font-weight: 900;
     rotate: 0deg;
@@ -268,30 +276,35 @@ i {
 
 .menu-cover .menu-list ul>li.active::before {
     rotate: 135deg;
-    border: 3px solid #bf930f;
+    border: 3px solid var(--color-maroon);
 }
 
-.rooms::before, .hotel::before {
+.rooms::before,
+.hotel::before {
     content: "";
     position: absolute;
     width: 0%;
     height: 2px;
-    background-color: #bf930f;
+    background-color: var(--color-maroon);
     right: 0;
     bottom: 0;
     transition: all .3s linear;
 }
 
-.rooms:hover::before, .hotel:hover::before {
+.rooms:hover::before,
+.hotel:hover::before {
     left: 0;
     right: unset;
     width: 100%;
 }
 
-.rooms>i, .hotel>i {
+.rooms>i,
+.hotel>i {
     transition: all .4s ease;
 }
-.rooms:hover>i, .hotel:hover>i {
+
+.rooms:hover>i,
+.hotel:hover>i {
     rotate: 180deg;
 }
 

@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-/* font-family: "Plus Jakarta Sans", sans-serif; */
-/* font-family: "Noto Serif Display", serif; */
+
+:root {
+  --color-maroon: #800000;
+  --color-gold: #C49A4C;
+  --color-cream: #EEE8AA;
+  --color-dark: #1C1C1C;
+  --font-heading: "Noto Serif Display", serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
 
 * {
   margin: 0;
@@ -10,13 +17,26 @@
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+p {
+  font-family: var(--font-body);
+}
+
 html,
 body {
   width: 100%;
   height: 100%;
   /* allow scroll (don't hide here) */
-  background-color: #112e2e;
-  color: #fff;
+  background-color: #fff;
+  color: var(--color-dark);
   position: relative;
 }
 
@@ -27,20 +47,20 @@ body {
 
 /* Scrollbar track (background) */
 ::-webkit-scrollbar-track {
-  background: #184040;
+  background: var(--color-gold);
 }
 
 /* Scrollbar handle */
 ::-webkit-scrollbar-thumb {
   /* width: 17px; */
-  background: #bf930f;
+  background: var(--color-maroon);
   border-radius: 5px;
-  border: 2px solid #184040;
+  border: 2px solid var(--color-gold);
 }
 
 /* Handle hover effect */
 ::-webkit-scrollbar-thumb:hover {
-  background: #fff;
+  background: var(--color-cream);
 }
 
 
@@ -105,7 +125,7 @@ body {
 }
 
 .bg_clr {
-  background-color: #112e2e;
+  background-color: #fff;
 }
 
 .col_sm2 {
@@ -381,7 +401,6 @@ body {
   font-weight: 500;
   text-transform: capitalize;
   margin-bottom: 20px;
-
   padding-bottom: 10px;
 }
 

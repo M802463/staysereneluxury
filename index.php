@@ -11,7 +11,7 @@
         <div id="smooth-content">
             <!-- all your page content here -->
             <div class="banner">
-                <img src="https://placehold.co/1920x950/000/fff" alt="" class="img">                   
+                <img src="https://placehold.co/1920x950/eee8aa/1C1C1C" alt="" class="img">                   
             </div>
             <div class="col_sm1"><br><br>
                 <div class="top">

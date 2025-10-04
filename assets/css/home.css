@@ -621,7 +621,7 @@ body {
   font-size: 20px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
-  color: #fff;
+  color: var(--color-maroon);
   text-transform: uppercase;
   word-spacing: 0.5;
 }
@@ -632,14 +632,14 @@ body {
   height: 30px;
   display: inline-block;
   text-align: center;
-  border: 1px solid #fff;
+  border: 1px solid var(--color-maroon);
   transition: all 0.4s ease-in-out;
   border-radius: 50%;
   padding-top: 2px;
 }
 
 .img-flex a span img {
-  filter: brightness(0) saturate(100%) invert(93%) sepia(20%) saturate(400%) hue-rotate(20deg) brightness(95%) contrast(90%);
+  filter: brightness(0) saturate(100%) invert(13%) sepia(100%) saturate(2382%) hue-rotate(358deg) brightness(93%) contrast(101%);
   width: 18px;
 }
 

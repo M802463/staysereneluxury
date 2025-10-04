@@ -9,29 +9,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
     function navbar() {
-        let navbar = document.getElementById('header')
-        let lastScroll = 0;
+      let navbar = document.getElementById('header');
+let lastScroll = 0;
 
-        window.addEventListener('scroll', () => {
-            let scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-            if (scrollTop > lastScroll) {
-                // gsap.to('#header', {
-                //     y: "-100%",
-                //     duration: 1,
-                //     ease: "power2.out"
-                // })
-                navbar.classList.add("active");
-            } else {
-                // gsap.to('#header', {
-                //     y: "0%",
-                //     duration: .5,
-                //     ease: "power2.out"
-                // })
-                navbar.classList.remove("active");
-            }
+window.addEventListener('scroll', () => {
+    let scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
 
-            lastScroll = scrollTop;
-        })
+    if (scrollTop > 200) {
+        // yeh tabhi chalega jab 400px se upar scroll karoge
+        if (scrollTop > lastScroll) {
+            // scroll down
+            navbar.classList.add("active");
+        } else {
+            // scroll up
+            navbar.classList.remove("active");
+        }
+    } else {
+        // 400px ke andar rahe to hamesha normal state
+        navbar.classList.remove("active");
+    }
+
+    lastScroll = scrollTop;
+});
+
 
         let menuItem = document.querySelectorAll(".menu-list ul li")
 

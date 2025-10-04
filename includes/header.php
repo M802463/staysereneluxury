@@ -26,7 +26,7 @@
     <section>
         <div class="top flex-between">
             <a href="#" id="logo">
-                <img src="../assets/images/logo.svg" alt="logo" class="img" loading="lazy">
+                <img src="assets/images/logo.svg" alt="logo" class="img" loading="lazy">
             </a>
             <div class="flex">
                 <div class="menu">
@@ -57,7 +57,7 @@
         <div class="menu-cover">
             <div class="menu-logo">
                 <a href="#">
-                    <img src="../assets/images/logo.svg" alt="logo" class="img" loading="lazy">
+                    <img src="assets/images/logo.svg" alt="logo" class="img" loading="lazy">
                 </a>
             </div>
             <div class="menu-list">

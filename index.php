@@ -13,7 +13,7 @@
             <div class="banner">
                 <img src="https://placehold.co/1920x950/000/fff" alt="" class="img">
             </div>
-
+123
             <div class="col_sm1 bg_clr3"> <br> <br>
                 <div class="top">
                     <div class="room-suit-head">

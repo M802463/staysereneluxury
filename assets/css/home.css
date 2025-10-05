@@ -91,6 +91,7 @@ body {
 .col_sm3 {
   width: 31%;
   margin: 1%;
+  float: left;
 }
 
 .col_sm4 {
@@ -705,7 +706,66 @@ body {
   width: 100%;
 }
 
+/* .gallery section ==== */
+.gallery-card {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
 
+.gallery-card .box-img {
+  display: block;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.gallery-card .box-img img {
+  width: 100%;
+  -webkit-transition: 1.3s all ease;
+  transition: 1.3s all ease;
+}
+
+.gallery-card .box-img:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(bottom, rgba(24, 26, 30, 0.5), rgba(24, 26, 30, 0.5));
+  background: linear-gradient(0deg, rgba(24, 26, 30, 0.5), rgba(24, 26, 30, 0.5));
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.gallery-card:hover .box-img:before {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.gallery-card:hover .box-img img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* .gallery-card_wrapp:nth-child(2) {
+  margin-top: 120px;
+}
+
+.gallery-card_wrapp:nth-child(3) {
+  margin-top: 240px;
+} */
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -730,6 +790,33 @@ body {
   .footer-column:nth-last-child(2) {
     border-bottom: none;
     padding-bottom: 0;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .stat-item::after {
+    display: none;
+  }
+
+  .stat-number {
+    font-size: 3rem;
+  }
+
+  .stat-label {
+    font-size: 1rem;
+  }
+
+  .stats-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 200px;
   }
 }
 
@@ -1052,34 +1139,4 @@ body {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .stats-container {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .stat-item::after {
-    display: none;
-  }
-
-  .stat-number {
-    font-size: 3rem;
-  }
-
-  .stat-label {
-    font-size: 1rem;
-  }
-
-  .stats-actions {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn-primary,
-  .btn-secondary {
-    width: 200px;
-  }
 }

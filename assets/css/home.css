@@ -163,7 +163,6 @@ body {
 
 .banner {
   padding-top: 153px;
-  clip-path: polygon(100% 0%, 0% 0%, 0.00% 92.82%, 1.00% 93.17%, 2.00% 93.51%, 3.00% 93.83%, 4.00% 94.13%, 5.00% 94.41%, 6.00% 94.66%, 7.00% 94.90%, 8.00% 95.10%, 9.00% 95.27%, 10.00% 95.42%, 11.00% 95.53%, 12.00% 95.61%, 13.00% 95.65%, 14.00% 95.67%, 15.00% 95.65%, 16.00% 95.59%, 17.00% 95.51%, 18.00% 95.39%, 19.00% 95.24%, 20.00% 95.06%, 21.00% 94.85%, 22.00% 94.61%, 23.00% 94.35%, 24.00% 94.06%, 25.00% 93.76%, 26.00% 93.43%, 27.00% 93.09%, 28.00% 92.74%, 29.00% 92.37%, 30.00% 92.00%, 31.00% 91.62%, 32.00% 91.24%, 33.00% 90.86%, 34.00% 90.48%, 35.00% 90.11%, 36.00% 89.75%, 37.00% 89.40%, 38.00% 89.07%, 39.00% 88.75%, 40.00% 88.46%, 41.00% 88.18%, 42.00% 87.93%, 43.00% 87.71%, 44.00% 87.52%, 45.00% 87.35%, 46.00% 87.22%, 47.00% 87.11%, 48.00% 87.04%, 49.00% 87.01%, 50.00% 87.00%, 51.00% 87.03%, 52.00% 87.10%, 53.00% 87.19%, 54.00% 87.32%, 55.00% 87.48%, 56.00% 87.67%, 57.00% 87.89%, 58.00% 88.13%, 59.00% 88.40%, 60.00% 88.69%, 61.00% 89.00%, 62.00% 89.33%, 63.00% 89.68%, 64.00% 90.03%, 65.00% 90.40%, 66.00% 90.78%, 67.00% 91.16%, 68.00% 91.54%, 69.00% 91.92%, 70.00% 92.29%, 71.00% 92.66%, 72.00% 93.02%, 73.00% 93.36%, 74.00% 93.69%, 75.00% 94.00%, 76.00% 94.29%, 77.00% 94.56%, 78.00% 94.80%, 79.00% 95.01%, 80.00% 95.20%, 81.00% 95.36%, 82.00% 95.48%, 83.00% 95.58%, 84.00% 95.64%, 85.00% 95.66%, 86.00% 95.66%, 87.00% 95.62%, 88.00% 95.55%, 89.00% 95.44%, 90.00% 95.30%, 91.00% 95.14%, 92.00% 94.94%, 93.00% 94.71%, 94.00% 94.46%, 95.00% 94.19%, 96.00% 93.89%, 97.00% 93.57%, 98.00% 93.24%, 99.00% 92.89%, 100.00% 92.53%);
 }
 
 /* ==================== */
@@ -766,6 +765,126 @@ body {
 .gallery-card_wrapp:nth-child(3) {
   margin-top: 240px;
 } */
+
+
+/* ==================== */
+/* ==================== */
+/* ===BannerSection=== */
+/* ==================== */
+/* ==================== */
+
+    .banner-swiper {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+
+    .banner-slide {
+      position: relative;
+      display: flex!important;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .banner-content {
+      max-width: 600px;
+      opacity: 0;
+      transform: translateY(60px);
+      transition: all 1s ease;
+    }
+
+    .banner-content.active {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+
+    .banner-content h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .banner-content p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .banner-content a {
+      display: inline-block;
+      padding: 0.7rem 1.8rem;
+      background: #fff;
+      color: #000;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .banner-content a:hover {
+      background: #c49a4c;
+      color: #fff;
+    }
+
+    /* Navigation Buttons */
+    .banner-button-next,
+    .banner-button-prev {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(6px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      /* make sure buttons are above slides */
+    }
+
+    .banner-button-prev {
+      left: 40px;
+    }
+
+    .banner-button-next {
+      right: 40px;
+    }
+
+    .nav-thumb {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.8);
+      transition: background-image 0.6s ease, transform 0.4s ease;
+    }
+
+    .banner-button-prev:hover .nav-thumb,
+    .banner-button-next:hover .nav-thumb {
+      transform: scale(1.05);
+    }
+
+    .banner-button-next::after,
+    .banner-button-prev::after {
+      position: relative;
+      z-index: 2;
+      font-size: 22px;
+      color: #fff;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .banner-button-prev::after {
+      content: "←";
+    }
+
+    .banner-button-next::after {
+      content: "→";
+    }
 
 /* Responsive Design */
 @media (max-width: 768px) {

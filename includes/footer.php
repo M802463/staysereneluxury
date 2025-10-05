@@ -125,7 +125,7 @@
 					</div>
 					<div class="col_sm2_2 img-flex relative">
 						<div class="overlay2">
-							<a>Make Reservation
+							<a href="booking.php">Make Reservation
 								<span>
 									<img src="assets/images/right-arrow.png" alt="" /></span></a>
 						</div>
@@ -140,7 +140,7 @@
 					</div>
 					<div class="col_sm2_2 img-flex relative">
 						<div class="overlay2">
-							<a>Make Reservation
+							<a href="contact.php">CONTACT US
 								<span>
 									<img src="assets/images/right-arrow.png" alt="" /></span></a>
 						</div>

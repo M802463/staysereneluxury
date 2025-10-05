@@ -116,7 +116,7 @@
 		<!-- Footer Bottom -->
 		<div class="footer-bottom">
 			<div class="footer-bottom-container">
-				<div class="col_sm2 bg_clr">
+				<div class="col_sm2 bg_clr flex">
 					<div class="col_sm2_2 relative img-flex bg_clr2">
 						<img src="assets/images/footer-img4.png" class="img" alt="" />
 						<div class="overlay">
@@ -131,7 +131,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col_sm2 bg_clr">
+				<div class="col_sm2 bg_clr flex">
 					<div class="col_sm2_2 relative img-flex bg_clr2">
 						<img src="assets/images/footer-img3.png" class="img" alt="" />
 						<div class="overlay">

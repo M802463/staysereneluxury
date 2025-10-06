@@ -34,7 +34,7 @@
 				<!-- About Rotal Column -->
 				<div class="footer-column1">
 					<div class="ftr-logo">
-						<img src="../assets/images/logo.png" alt="" />
+						<img src="assets/images/logo.png" alt="" />
 					</div>
 					<p>
 						Inspired by luxury lifestyle and pristine nature, Stay Serene

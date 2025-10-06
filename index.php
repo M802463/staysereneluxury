@@ -70,42 +70,42 @@
                             <!-- Slide 1 -->
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <img src="../assets/images/tranqvilla-slide-1.jpg" alt="Card 1" />
+                                    <img src="assets/images/tranqvilla-slide-1.jpg" alt="Card 1" />
                                     <h3>Tranqvilla </h3>
                                     <p>Hilltop luxury villa</p>
                                     <a class="slide-learn-more" href="#">Learn More <img
-                                            src="../assets/images/thin-arrow.png" alt=""></a>
+                                            src="assets/images/thin-arrow.png" alt=""></a>
                                 </div>
                             </div>
                             <!-- Slide 2 -->
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <img src="../assets/images/midnightvilla-slide-2.jpg" alt="Card 2" />
+                                    <img src="assets/images/midnightvilla-slide-2.jpg" alt="Card 2" />
                                     <h3>Midnight Alpine Villa</h3>
                                     <p>Beautiful mountain view.</p>
                                     <a class="slide-learn-more" href="#">Learn More <img
-                                            src="../assets/images/thin-arrow.png" alt=""></a>
+                                            src="assets/images/thin-arrow.png" alt=""></a>
 
                                 </div>
                             </div>
                             <!-- Slide 3 -->
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <img src="../assets/images/shamiyanavilla-slide-3.jpg" alt="Card 3" />
+                                    <img src="assets/images/shamiyanavilla-slide-3.jpg" alt="Card 3" />
                                     <h3>Shamiyana Luxury Tent I Villa</h3>
                                     <p>Beautiful mountain view.</p>
                                     <a class="slide-learn-more" href="#">Learn More <img
-                                            src="../assets/images/thin-arrow.png" alt=""></a>
+                                            src="assets/images/thin-arrow.png" alt=""></a>
 
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <img src="../assets/images/shamiyanavilla2-slide-3.jpg" alt="Card 1" />
+                                    <img src="assets/images/shamiyanavilla2-slide-3.jpg" alt="Card 1" />
                                     <h3>Shamiyana Luxury Tent II Villa</h3>
                                     <p>Beautiful mountain view.</p>
                                     <a class="slide-learn-more" href="#">Learn More <img
-                                            src="../assets/images/thin-arrow.png" alt=""></a>
+                                            src="assets/images/thin-arrow.png" alt=""></a>
 
                                 </div>
                             </div>
@@ -123,16 +123,16 @@
                         <div class="img-box">
                             <div class="img-area">
                                 <div class="img-paralax">
-                                    <img src="../assets/images/about_5.jpg" alt="">
+                                    <img src="assets/images/about_5.jpg" alt="">
                                 </div>
 
                             </div>
                             <div class="about-wrapp">
                                 <div class="img_2">
-                                    <img src="../assets/images/about_6.jpg" alt="">
+                                    <img src="assets/images/about_6.jpg" alt="">
                                 </div>
                                 <div class="box-content">
-                                    <div class="award"><img src="../assets/images/logo.png" class="img" alt=""></div>
+                                    <div class="award"><img src="assets/images/logo.png" class="img" alt=""></div>
                                 </div>
                             </div>
                         </div>
@@ -176,13 +176,13 @@
                         <div class="col_sm3 gallery-card_wrapp">
                             <div class="gallery-card">
                                 <div class="box-img">
-                                    <img src="../assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
+                                    <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
                                 </div>
                             </div>
 
                             <div class="gallery-card">
                                 <div class="box-img">
-                                    <img src="../assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
+                                    <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
                                 </div>
                             </div>
                         </div>
@@ -190,12 +190,12 @@
                         <div class="col_sm3 gallery-card_wrapp">
                             <div class="gallery-card">
                                 <div class="box-img">
-                                    <img src="../assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
+                                    <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
                                 </div>
                             </div>
                             <div class="gallery-card">
                                 <div class="box-img">
-                                    <img src="../assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
+                                    <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
                                 </div>
                             </div>
                         </div>
@@ -203,12 +203,12 @@
                         <div class="col_sm3 gallery-card_wrapp">
                             <div class="gallery-card">
                                 <div class="box-img">
-                                    <img src="../assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
+                                    <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
                                 </div>
                             </div>
                             <div class="gallery-card">
                                 <div class="box-img">
-                                    <img src="../assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
+                                    <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
                                 </div>
                             </div>
                         </div>

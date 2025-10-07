@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 				window.pageYOffset ||
 				document.body.scrollTop;
 
-			if (scrollTop > 155) {
+			if (scrollTop > 200) {
 				// yeh tabhi chalega jab 400px se upar scroll karoge
 				if (scrollTop > lastScroll) {
 					// scroll down
@@ -113,23 +113,26 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 	const timeElement = document.getElementById("time");
 
-	function updateClock() {
-		setInterval(updateClock, 1000);
-		const now = new Date();
+function updateClock() {
+  const now = new Date();
 
-		const time = new Intl.DateTimeFormat("en-IN", {
-			hour: "2-digit",
-			minute: "2-digit",
-			second: "2-digit",
-			hour12: true,
-			timeZone: "Asia/Kolkata",
-		}).format(now);
+  const time = new Intl.DateTimeFormat("en-IN", {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: true,
+    timeZone: "Asia/Kolkata",
+  }).format(now);
 
-		timeElement.textContent = time;
-	}
+  timeElement.textContent = time;
+}
 
-	updateClock();
-	setInterval(updateClock, 1000);
+// ek baar turant show kar do
+updateClock();
+
+// fir har 1 second me update karo
+setInterval(updateClock, 1000);
+
 
 	navMenu();
 	navbar();
@@ -254,4 +257,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
 			updateBannerNavThumbs(bannerSwiper);
 		}, bannerContentHideDuration);
 	});
+
 });

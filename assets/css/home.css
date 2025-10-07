@@ -773,121 +773,209 @@ body {
 /* ==================== */
 /* ==================== */
 
-    .banner-swiper {
-      width: 100%;
-      height: 100vh;
-      position: relative;
-    }
+.banner-swiper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
 
-    .banner-slide {
-      position: relative;
-      display: flex!important;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background-size: cover;
-      background-position: center;
-    }
+.banner-slide {
+  position: relative;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
 
-    .banner-content {
-      max-width: 600px;
-      opacity: 0;
-      transform: translateY(60px);
-      transition: all 1s ease;
-    }
+.banner-content {
+  max-width: 600px;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease;
+}
 
-    .banner-content.active {
-      opacity: 1 !important;
-      transform: translateY(0) !important;
-    }
+.banner-content.active {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
 
-    .banner-content h2 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      text-transform: uppercase;
-    }
+.banner-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
 
-    .banner-content p {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
-    }
+.banner-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
 
-    .banner-content a {
-      display: inline-block;
-      padding: 0.7rem 1.8rem;
-      background: #fff;
-      color: #000;
-      border-radius: 30px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
+.banner-content a {
+  display: inline-block;
+  padding: 0.7rem 1.8rem;
+  background: #fff;
+  color: #000;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
 
-    .banner-content a:hover {
-      background: #c49a4c;
-      color: #fff;
-    }
+.banner-content a:hover {
+  background: #c49a4c;
+  color: #fff;
+}
 
-    /* Navigation Buttons */
-    .banner-button-next,
-    .banner-button-prev {
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(6px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 10;
-      /* make sure buttons are above slides */
-    }
+/* Navigation Buttons */
+.banner-button-next,
+.banner-button-prev {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  /* make sure buttons are above slides */
+}
 
-    .banner-button-prev {
-      left: 40px;
-    }
+.banner-button-prev {
+  left: 40px;
+}
 
-    .banner-button-next {
-      right: 40px;
-    }
+.banner-button-next {
+  right: 40px;
+}
 
-    .nav-thumb {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-      filter: brightness(0.8);
-      transition: background-image 0.6s ease, transform 0.4s ease;
-    }
+.nav-thumb {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.8);
+  transition: background-image 0.6s ease, transform 0.4s ease;
+}
 
-    .banner-button-prev:hover .nav-thumb,
-    .banner-button-next:hover .nav-thumb {
-      transform: scale(1.05);
-    }
+.banner-button-prev:hover .nav-thumb,
+.banner-button-next:hover .nav-thumb {
+  transform: scale(1.05);
+}
 
-    .banner-button-next::after,
-    .banner-button-prev::after {
-      position: relative;
-      z-index: 2;
-      font-size: 22px;
-      color: #fff;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    }
+.banner-button-next::after,
+.banner-button-prev::after {
+  position: relative;
+  z-index: 2;
+  font-size: 22px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
 
-    .banner-button-prev::after {
-      content: "←";
-    }
+.banner-button-prev::after {
+  content: "←";
+}
 
-    .banner-button-next::after {
-      content: "→";
-    }
+.banner-button-next::after {
+  content: "→";
+}
+
+@media (max-width: 1600px) {
+  nav section:nth-child(1) {
+    padding: 15px 1% !important;
+  }
+}
+
+@media (max-width: 1300px) {
+
+  .top-bar-left P,
+  .top-bar-left a,
+  .top-bar-right ul li p,
+  .top-bar-right ul li a,
+  .menu p,
+  .rooms p,
+  .hotel p,
+  .booking p,
+  .menu-cover .menu-list ul li {
+    font-size: 13px;
+    line-height: 120%;
+  }
+
+  .banner {
+    padding-top: 135px;
+  }
+
+  .rooms,
+  .hotel,
+  .menu,
+  .booking {
+    width: 170px;
+    height: 90px;
+  }
+
+  #logo {
+    height: 137px;
+    width: 170px;
+  }
+
+  i {
+    font-size: 13px;
+  }
+
+  .menu-cover .menu-list ul>li:has(> ul > li)::before {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  .top-bar-right ul li:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+
+  .rooms,
+  .hotel,
+  .menu,
+  .booking {
+    width: 150px;
+  }
+
+  .top-bar-right ul li:first-child {
+    display: none;
+  }
+
+  .top-bar-right ul li {
+    border-left: unset;
+    padding-left: 0px;
+  }
+}
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .banner {
+    padding-top: 89px;
+  }
+
+  #logo {
+    height: 90px;
+    padding: 2px 0 14px;
+  }
+
+  nav section:nth-child(1) {
+    display: none;
+  }
+
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -937,9 +1025,76 @@ body {
   .btn-secondary {
     width: 200px;
   }
+
+  .side-nav {
+    width: 100%;
+  }
+
+  .menu-close {
+    width: 35px;
+    height: 35px;
+    right: 30px;
+  }
+
+  .rooms,
+  .hotel {
+    display: none;
+  }
 }
 
-@media (max-width: 480px) {
+
+
+@media (max-width: 500px) {
+
+  .menu-close i {
+    font-size: 13px;
+  }
+
+  .menu-close {
+    width: 30px;
+    height: 30px;
+  }
+
+  .flex-between .flex:nth-child(2) {
+    order: 1;
+  }
+
+  .flex-between .flex:nth-child(3) {
+    order: 2;
+  }
+
+  .menu p,
+  .booking p {
+    display: none;
+  }
+
+
+
+  .menu,
+  .booking {
+    background-color: transparent;
+    width: 80px;
+    height: 90px;
+  }
+
+  .menu i,
+  .booking i {
+    font-size: 20px;
+  }
+
+  #logo {
+    position: static;
+    width: 180px;
+    order: 2;
+    height: 130px;
+    transform: unset;
+    padding: 5px 0 25px;
+  }
+
+  nav section:nth-child(1) {
+    display: none;
+  }
+
   .footer-container {
     grid-template-columns: 1fr;
     gap: 20px;

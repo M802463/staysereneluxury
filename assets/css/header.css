@@ -110,7 +110,7 @@ i {
     left: 50%;
     transform: translate(-50%, 0%);
     width: 200px;
-    height: 125px;
+    height: 150px;
     mask-image: url(../images/logo-shape.png);
     background-image: url(../images/logo-bg-shape.png);
     mask-size: 100% 100%;
@@ -118,7 +118,7 @@ i {
     background-position: center;
     background-size: cover;
     background-color: var(--color-cream);
-    padding: 8px 0 25px;
+    padding: 8px 0 35px;
     display: flex;
 }
 

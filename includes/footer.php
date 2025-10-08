@@ -44,7 +44,7 @@
 				</div>
 
 				<!-- Useful Links Column -->
-				<div class="footer-column2">
+				<div class="footer-column2 right-brd-none">
 					<h3>Useful Links</h3>
 					<ul>
 						<li>
@@ -59,7 +59,7 @@
 						<li>
 							<img src="assets/images/right-arrow.png" alt="" /><a href="#booking">Request a Booking</a>
 						</li>
-					
+
 					</ul>
 				</div>
 
@@ -79,7 +79,7 @@
 						<li>
 							<img src="assets/images/right-arrow.png" alt="" /><a href="shamiyana-luxury-tent-ii.php">Shamiyana Luxury Tent II</a>
 						</li>
-					
+
 					</ul>
 				</div>
 
@@ -115,37 +115,44 @@
 		<div class="clear"></div>
 		<!-- Footer Bottom -->
 		<div class="footer-bottom">
-			<div class="footer-bottom-container">
-				<div class="col_sm2 bg_clr flex">
-					<div class="col_sm2_2 relative img-flex bg_clr2">
-						<img src="assets/images/footer-img4.png" class="img" alt="" />
-						<div class="overlay">
+			<div class="footer-bottom-container top">
+				<section class="split-container col_sm2">
+					<div class="left-side">
+						<div class="text-box pading">
 							<h2>Our Rooms & Suits</h2>
 						</div>
 					</div>
-					<div class="col_sm2_2 img-flex relative">
-						<div class="overlay2">
+
+					<div class="right-side">
+						<div class="text-box">
 							<a href="booking.php">Make Reservation
-								<span>
-									<img src="assets/images/right-arrow.png" alt="" /></span></a>
+								<div class="f-arrow-icon">
+									<img src="assets/images/right-arrow.png" alt="" />
+								</div>
+							</a>
 						</div>
 					</div>
-				</div>
-				<div class="col_sm2 bg_clr flex">
-					<div class="col_sm2_2 relative img-flex bg_clr2">
-						<img src="assets/images/footer-img3.png" class="img" alt="" />
-						<div class="overlay">
-							<h2>Our Rooms & Suits</h2>
+				</section>
+				<section class="split-container col_sm2">
+					<div class="left-side">
+						<div class="text-box">
+							<h2>Get to know us</h2>
+
 						</div>
 					</div>
-					<div class="col_sm2_2 img-flex relative">
-						<div class="overlay2">
+
+					<div class="right-side">
+						<div class="text-box">
 							<a href="contact.php">CONTACT US
-								<span>
-									<img src="assets/images/right-arrow.png" alt="" /></span></a>
+								<div class="f-arrow-icon">
+									<img src="assets/images/right-arrow.png" alt="" />
+								</div>
+							</a>
+
 						</div>
 					</div>
-				</div>
+				</section>
+
 			</div>
 		</div>
 		<div class="footer-bottom2">

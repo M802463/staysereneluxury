@@ -129,7 +129,7 @@
                             </div>
                             <div class="about-wrapp">
                                 <div class="img_2">
-                                    <img src="assets/images/about_6.jpg" alt="">
+                                    <img src="assets/images/about_6.jpg" class="img" alt="">
                                 </div>
                                 <div class="box-content">
                                     <div class="award"><img src="assets/images/logo.png" class="img" alt=""></div>

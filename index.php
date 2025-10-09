@@ -10,29 +10,31 @@
     <div id="smooth-wrapper">
         <div id="smooth-content">
             <!-- all your page content here -->
-            <div class="banner">
+            <div class="banner button-scroll">
                 <div class="swiper banner-swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide banner-slide"
-                            style="background-image: url('https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?auto=format&fit=crop&w=1600&q=80');">
+                            style="background-image: url('assets/images/banner1.jpg');">
                             <div class="banner-content">
-                                <h2>Luxury Stay</h2>
-                                <p>Experience unmatched comfort and elegance with our premium suites.</p>
+                                <h2>Tranqvilla</h2>
+                                <p>One of the best features of this villa is the private swimming pool, which can be
+                                    accessed directly from the hall.</p>
                                 <a href="#">Explore</a>
                             </div>
                         </div>
 
                         <div class="swiper-slide banner-slide"
-                            style="background-image: url('https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?auto=format&fit=crop&w=1600&q=80');">
+                            style="background-image: url('assets/images/banner2.jpg');">
                             <div class="banner-content">
-                                <h2>Peaceful Escape</h2>
-                                <p>Relax by the ocean and feel the serenity surround your soul.</p>
+                                <h2>Midnight Alpine</h2>
+                                <p>A-Shape Villa – the most luxurious villa of Stay Serene Luxury. A 2BHK villa in
+                                    Murbad, best for couples, families, or friends.</p>
                                 <a href="#">Discover</a>
                             </div>
                         </div>
 
                         <div class="swiper-slide banner-slide"
-                            style="background-image: url('https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80');">
+                            style="background-image: url('assets/images/banner3.jpg');">
                             <div class="banner-content">
                                 <h2>Nature’s Touch</h2>
                                 <p>Immerse yourself in the beauty of untouched natural landscapes.</p>
@@ -40,14 +42,14 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide banner-slide"
+                        <!-- <div class="swiper-slide banner-slide"
                             style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80');">
                             <div class="banner-content">
                                 <h2>Urban Luxury</h2>
                                 <p>Stay in the heart of the city with all modern amenities at your fingertips.</p>
                                 <a href="#">See More</a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="banner-button-next">
@@ -55,6 +57,57 @@
                     </div>
                     <div class="banner-button-prev">
                         <div class="nav-thumb"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col_sm1">
+                <div class="top">
+                    <div class="booking-form">
+                        <!-- Villa Dropdown -->
+                        <div class="custom-select" id="villaDropdown">
+                            <label class="input-label">Villas</label>
+                            <div class="select-selected">Select Villa</div>
+                            <div class="select-items">
+                                <div data-value="Villa Sunshine">Villa Sunshine</div>
+                                <div data-value="Villa Paradise">Villa Paradise</div>
+                                <div data-value="Villa Oceanview">Villa Oceanview</div>
+                                <div data-value="Villa Serenity">Villa Serenity</div>
+                            </div>
+                        </div>
+
+                        <!-- Date Picker -->
+                        <div class="custom-select">
+                            <label class="input-label">Dates</label>
+                            <input type="text" id="dateRange" placeholder="Select dates" readonly>
+                        </div>
+
+                        <!-- Guests Dropdown -->
+                        <div class="custom-select" id="guestSelect">
+                            <label class="input-label">Guests</label>
+                            <div class="select-selected">Guests</div>
+                            <div class="guest-dropdown" id="guestDropdown">
+                                <div class="guest-row">
+                                    <span class="guest-label">Adults</span>
+                                    <div class="guest-controls">
+                                        <button class="minus" data-type="adult">−</button>
+                                        <span class="guest-count" id="adultCount">1</span>
+                                        <button class="plus" data-type="adult">+</button>
+                                    </div>
+                                </div>
+                                <div class="guest-row">
+                                    <span class="guest-label">Children</span>
+                                    <div class="guest-controls">
+                                        <button class="minus" data-type="child">−</button>
+                                        <span class="guest-count" id="childCount">0</span>
+                                        <button class="plus" data-type="child">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Submit -->
+                        <button id="searchBtn">CHECK AVAILABILITY</button>
                     </div>
                 </div>
             </div>
@@ -229,6 +282,7 @@
         <script src="assets/js/local-cdn/scrollTrigger.min.js"></script>
         <!-- ScrollSmoother requires ScrollTrigger -->
         <script src="assets/js/local-cdn/scrollSmoother.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
         <script src="assets/js/script.js"></script>
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

@@ -113,25 +113,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 	const timeElement = document.getElementById("time");
 
-function updateClock() {
-  const now = new Date();
+	function updateClock() {
+		const now = new Date();
 
-  const time = new Intl.DateTimeFormat("en-IN", {
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-    hour12: true,
-    timeZone: "Asia/Kolkata",
-  }).format(now);
+		const time = new Intl.DateTimeFormat("en-IN", {
+			hour: "2-digit",
+			minute: "2-digit",
+			second: "2-digit",
+			hour12: true,
+			timeZone: "Asia/Kolkata",
+		}).format(now);
 
-  timeElement.textContent = time;
-}
+		timeElement.textContent = time;
+	}
 
-// ek baar turant show kar do
-updateClock();
+	// ek baar turant show kar do
+	updateClock();
 
-// fir har 1 second me update karo
-setInterval(updateClock, 1000);
+	// fir har 1 second me update karo
+	setInterval(updateClock, 1000);
 
 
 	navMenu();
@@ -259,3 +259,82 @@ setInterval(updateClock, 1000);
 	});
 
 });
+
+
+// function booking() {
+	// Flatpickr Init
+	flatpickr("#dateRange", {
+		mode: "range",
+		dateFormat: "d/m/Y",
+	});
+
+	// Villa Dropdown
+	const villaSelect = document.querySelector("#villaDropdown .select-selected");
+	const villaOptions = document.querySelector("#villaDropdown .select-items");
+	villaSelect.addEventListener("click", () => {
+		villaOptions.style.display = villaOptions.style.display === "block" ? "none" : "block";
+	});
+	villaOptions.querySelectorAll("div").forEach(opt => {
+		opt.addEventListener("click", () => {
+			villaSelect.textContent = opt.textContent;
+			villaOptions.style.display = "none";
+		});
+	});
+
+	// Guests Dropdown
+	const guestSelect = document.querySelector("#guestSelect .select-selected");
+	const guestDropdown = document.getElementById("guestDropdown");
+	let adultCount = 1;
+	let childCount = 0;
+
+	guestSelect.addEventListener("click", () => {
+		guestDropdown.style.display = guestDropdown.style.display === "block" ? "none" : "block";
+	});
+
+	document.querySelectorAll(".guest-controls button").forEach(btn => {
+		btn.addEventListener("click", () => {
+			const type = btn.getAttribute("data-type");
+			const countSpan = document.getElementById(type + "Count");
+			let count = parseInt(countSpan.textContent);
+			if (btn.classList.contains("plus")) count++;
+			else if (count > 0) count--;
+			if (type === "adult" && count === 0) count = 1;
+			countSpan.textContent = count;
+
+			guestSelect.textContent = `${adultCount = parseInt(document.getElementById("adultCount").textContent)} Adult${adultCount > 1 ? "s" : ""}, ${childCount = parseInt(document.getElementById("childCount").textContent)} Child${childCount > 1 ? "ren" : ""}`;
+		});
+	});
+
+	// Close dropdowns if clicked outside
+	document.addEventListener("click", (e) => {
+		if (!e.target.closest(".custom-select")) {
+			villaOptions.style.display = "none";
+			guestDropdown.style.display = "none";
+		}
+	});
+
+	// Redirect map for villas
+	const villaPages = {
+		"Villa Sunshine": "villa-sunshine.html",
+		"Villa Paradise": "villa-paradise.html",
+		"Villa Oceanview": "villa-oceanview.html",
+		"Villa Serenity": "villa-serenity.html"
+	};
+
+	// Submit Button
+	document.getElementById("searchBtn").addEventListener("click", () => {
+		const villa = villaSelect.textContent.trim();
+		const dates = document.getElementById("dateRange").value.trim();
+		const guests = `${adultCount} Adults, ${childCount} Children`;
+
+		if (!villa || villa === "Select Villa" || !dates) {
+			alert("Please fill all fields!");
+			return;
+		}
+
+		const url = `${villaPages[villa]}?dates=${encodeURIComponent(dates)}&guests=${encodeURIComponent(guests)}`;
+		window.location.href = url;
+	});
+// }
+
+// booking()

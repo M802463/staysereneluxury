@@ -1862,7 +1862,7 @@ button:hover {
 
 /* .about section === */
 .bg_clr3 {
-  background-color: var(--color-cream);
+  background-color: var(--color-cream) !important;
 }
 
 .about-section .img-box {

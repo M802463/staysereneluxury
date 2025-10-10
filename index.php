@@ -114,7 +114,7 @@
 
             <div class="col_sm1 bg_clr3"> <br> <br>
                 <div class="top">
-                    <div class="room-suit-head">
+                    <div class="room-suit-head margin-1">
                         <h3>About Staysereneluxury</h3>
                         <h2>Welcome To Staysereneluxury Hotel In Natural Surroundings</h2>
                     </div>
@@ -191,7 +191,6 @@
                         </div>
                     </div>
                     <div class="col_sm2 about-content">
-
                         <div class="room-suit-head">
                             <h3>About Staysereneluxury</h3>
                             <h2>Welcome To Staysereneluxury Hotel In Natural Surroundings</h2>
@@ -224,49 +223,77 @@
                     </div>
                     <div class="clear"></div>
                 </div>
-                <div class="col_sm1">
+                <div class="col_sm1 relative bg_img"> <br>
                     <div class="top">
-                        <div class="col_sm3 gallery-card_wrapp">
+                        <div class="room-suit-head2 title-absolute hidInMob">
+                            <h3>Gallery</h3>
+                            <h2>Explore Our Beautiful Gallery</h2>
+                            <p>We provide you with the best quality of services and <br> facilities for all your travel and place needs</p>
+                        </div>
+                        <div class="room-suit-head2 hidInDesk margin-1">
+                            <h3>Gallery</h3>
+                            <h2>Explore Our Beautiful Gallery</h2>
+                            <p>We provide you with the best quality of services and <br> facilities for all your travel and place needs</p>
+                        </div>
+                        <div class="col_sm3_3 gallery-card_wrapp">
                             <div class="gallery-card">
                                 <div class="box-img">
                                     <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
                                 </div>
                             </div>
 
-                            <div class="gallery-card ">
+                            <div class="gallery-card mrg-top">
                                 <div class="box-img">
                                     <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col_sm3 gallery-card_wrapp">
+                        <div class="col_sm3_3 gallery-card_wrapp gallery-img-margin">
                             <div class="gallery-card">
                                 <div class="box-img">
                                     <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
                                 </div>
                             </div>
-                            <div class="gallery-card">
+                            <div class="gallery-card mrg-top">
                                 <div class="box-img">
                                     <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col_sm3 gallery-card_wrapp">
+                        <div class="col_sm3_3 gallery-card_wrapp gallery-img-margin2 hidInMob">
                             <div class="gallery-card">
                                 <div class="box-img">
                                     <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
                                 </div>
                             </div>
+                            <div class="gallery-card mrg-top">
+                                <div class="box-img">
+                                    <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_sm3_3 hidInDesk">
                             <div class="gallery-card">
                                 <div class="box-img">
                                     <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
                                 </div>
                             </div>
                         </div>
+                        <div class="col_sm3_3 hidInDesk">
+                            <div class="gallery-card">
+                                <div class="box-img">
+                                    <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute-btn hidInMob">
+                            <a href="#" class="gal-btn">Explore More</a>
+                        </div>
+                        <a href="#" class="gal-btn hidInDesk margin-1">Explore More</a>
                         <div class="clear"></div>
-                    </div>
+                    </div> <br><br>
                     <div class="clear"></div>
                 </div>
 

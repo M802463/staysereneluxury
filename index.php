@@ -233,7 +233,7 @@
                                 </div>
                             </div>
 
-                            <div class="gallery-card">
+                            <div class="gallery-card ">
                                 <div class="box-img">
                                     <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
                                 </div>

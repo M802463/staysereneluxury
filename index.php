@@ -118,61 +118,92 @@
                         <h3>About Staysereneluxury</h3>
                         <h2>Welcome To Staysereneluxury <br> Hotel In Natural Surroundings</h2>
                     </div>
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <!-- Slide 1 -->
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <div class="card-img">
-                                        <img src="assets/images/tranqvilla-slide-1.jpg" class="img" alt="Card 1" />
-                                    </div>
 
-                                    <h3>Tranqvilla </h3>
-                                    <p>Hilltop luxury villa</p>
-                                    <a class="slide-learn-more" href="#">Learn More <img
-                                            src="assets/images/thin-arrow.png" alt=""></a>
+                    <div class="col_sm2">
+                        <div class="villa-card">
+
+                            <div class="icon-num">
+                                <div class="crd-icon">
+                                    <img src="assets/images/villa.png" class="img">
+                                </div>
+                                <div class="crd-num">
+                                    01
                                 </div>
                             </div>
-                            <!-- Slide 2 -->
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <div class="card-img">
-                                        <img src="assets/images/midnightvilla-slide-2.jpg" class="img" alt="Card 2" />
-                                    </div>
-                                    <h3>Midnight Alpine Villa</h3>
-                                    <p>Beautiful mountain view.</p>
-                                    <a class="slide-learn-more" href="#">Learn More <img
-                                            src="assets/images/thin-arrow.png" alt=""></a>
+                            <h3>Tranqvilla </h3>
+                            <p>Hilltop luxury villa</p>
 
-                                </div>
+                            <div class="card-img">
+                                <img src="assets/images/tranqvilla-slide-1.jpg" class="img" alt="Card 1" />
                             </div>
-                            <!-- Slide 3 -->
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <div class="card-img">
-                                        <img src="assets/images/shamiyanavilla-slide-3.jpg" class="img" alt="Card 3" />
-                                    </div>
-                                    <h3>Shamiyana Luxury Tent I Villa</h3>
-                                    <p>Beautiful mountain view.</p>
-                                    <a class="slide-learn-more" href="#">Learn More <img
-                                            src="assets/images/thin-arrow.png" alt=""></a>
-
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <div class="card-img">
-                                        <img src="assets/images/shamiyanavilla2-slide-3.jpg" class="img" alt="Card 1" />
-                                    </div>
-                                    <h3>Shamiyana Luxury Tent II Villa</h3>
-                                    <p>Beautiful mountain view.</p>
-                                    <a class="slide-learn-more" href="#">Learn More <img
-                                            src="assets/images/thin-arrow.png" alt=""></a>
-
-                                </div>
-                            </div>
+                            <a class="slide-learn-more" href="#">Learn More <img
+                                    src="assets/images/thin-arrow.png" alt=""></a>
                         </div>
                     </div>
+                    <div class="col_sm2">
+                        <div class="villa-card">
+
+                            <div class="icon-num">
+                                <div class="crd-icon">
+                                    <img src="assets/images/villa.png" class="img">
+                                </div>
+                                <div class="crd-num">
+                                    02
+                                </div>
+                            </div>
+                            <h3>Midnight Alpine – A Shape Villa </h3>
+                            <p>Hilltop luxury villa</p>
+
+                            <div class="card-img">
+                                <img src="assets/images/midnightvilla-slide-2.jpg" class="img" alt="Card 1" />
+                            </div>
+                            <a class="slide-learn-more" href="#">Learn More <img
+                                    src="assets/images/thin-arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col_sm2">
+                        <div class="villa-card">
+
+                            <div class="icon-num">
+                                <div class="crd-icon">
+                                    <img src="assets/images/villa.png" class="img">
+                                </div>
+                                <div class="crd-num">
+                                    03
+                                </div>
+                            </div>
+                            <h3>Shamiyana Luxury Tent I </h3>
+                            <p>Hilltop luxury villa</p>
+
+                            <div class="card-img">
+                                <img src="assets/images/shamiyanavilla2-slide-3.jpg" class="img" alt="Card 1" />
+                            </div>
+                            <a class="slide-learn-more" href="#">Learn More <img
+                                    src="assets/images/thin-arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col_sm2">
+                        <div class="villa-card">
+
+                            <div class="icon-num">
+                                <div class="crd-icon">
+                                    <img src="assets/images/villa.png" class="img">
+                                </div>
+                                <div class="crd-num">
+                                    04
+                                </div>
+                            </div>
+                            <h3>Shamiyana Luxury Tent II </h3>
+                            <p>Hilltop luxury villa</p>
+
+                            <div class="card-img">
+                                <img src="assets/images/shamiyanavilla2-slide-4.jpg" class="img" alt="Card 1" />
+                            </div>
+                            <a class="slide-learn-more" href="#">Learn More <img
+                                    src="assets/images/thin-arrow.png" alt=""></a>
+                        </div>
+                    </div>
+
 
                     <div class="clear"></div>
                 </div>

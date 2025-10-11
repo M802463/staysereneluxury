@@ -191,6 +191,13 @@ body {
   background-position: center center;
 }
 
+.top-navigate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 /* ==================== */
 /* ==================== */
 /* ===WelcomeSection=== */
@@ -1865,6 +1872,10 @@ button:hover {
   background-color: var(--color-cream) !important;
 }
 
+.bg_clr4 {
+  background-color: var(--color-gold) !important;
+}
+
 .about-section .img-box {
   position: relative;
   z-index: 2;
@@ -2138,4 +2149,143 @@ button:hover {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
+}
+
+.moving-text-container {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  padding: 20px 0;
+  margin: 20px 0;
+  position: relative;
+}
+
+.moving-text-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 60px;
+  animation: infiniteScroll 30s linear infinite;
+  will-change: transform;
+  width: max-content;
+}
+
+.moving-text-wrapper h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-maroon);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(45deg, #800000, #800000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.moving-text-wrapper svg {
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1));
+  animation: sparkle 2s ease-in-out infinite alternate;
+  flex-shrink: 0;
+}
+
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-50% - 30px));
+  }
+}
+
+@keyframes sparkle {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1.1) rotate(10deg);
+    opacity: 1;
+  }
+}
+
+/* Pause animation on hover */
+/* .moving-text-container:hover .moving-text-wrapper {
+  animation-play-state: paused;
+} */
+
+/* Add a subtle gradient overlay for seamless effect */
+.moving-text-container::before,
+.moving-text-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .moving-text-wrapper h2 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .moving-text-wrapper svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .moving-text-wrapper {
+    gap: 40px;
+  }
+
+  @keyframes infiniteScroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(calc(-50% - 20px));
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .moving-text-wrapper h2 {
+    font-size: 1.4rem;
+  }
+
+  .moving-text-wrapper svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .moving-text-wrapper {
+    gap: 30px;
+  }
+
+  .moving-text-container {
+    padding: 15px 0;
+  }
+
+  @keyframes infiniteScroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(calc(-50% - 15px));
+    }
+  }
 }

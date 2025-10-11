@@ -113,17 +113,20 @@
             </div>
 
             <div class="col_sm1 bg_clr3"> <br> <br>
-                <div class="top">
+                <div class="top relative">
                     <div class="room-suit-head margin-1">
                         <h3>About Staysereneluxury</h3>
-                        <h2>Welcome To Staysereneluxury Hotel In Natural Surroundings</h2>
+                        <h2>Welcome To Staysereneluxury <br> Hotel In Natural Surroundings</h2>
                     </div>
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <!-- Slide 1 -->
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <img src="assets/images/tranqvilla-slide-1.jpg" alt="Card 1" />
+                                    <div class="card-img">
+                                        <img src="assets/images/tranqvilla-slide-1.jpg" class="img" alt="Card 1" />
+                                    </div>
+
                                     <h3>Tranqvilla </h3>
                                     <p>Hilltop luxury villa</p>
                                     <a class="slide-learn-more" href="#">Learn More <img
@@ -133,7 +136,9 @@
                             <!-- Slide 2 -->
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <img src="assets/images/midnightvilla-slide-2.jpg" alt="Card 2" />
+                                    <div class="card-img">
+                                        <img src="assets/images/midnightvilla-slide-2.jpg" class="img" alt="Card 2" />
+                                    </div>
                                     <h3>Midnight Alpine Villa</h3>
                                     <p>Beautiful mountain view.</p>
                                     <a class="slide-learn-more" href="#">Learn More <img
@@ -144,7 +149,9 @@
                             <!-- Slide 3 -->
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <img src="assets/images/shamiyanavilla-slide-3.jpg" alt="Card 3" />
+                                    <div class="card-img">
+                                        <img src="assets/images/shamiyanavilla-slide-3.jpg" class="img" alt="Card 3" />
+                                    </div>
                                     <h3>Shamiyana Luxury Tent I Villa</h3>
                                     <p>Beautiful mountain view.</p>
                                     <a class="slide-learn-more" href="#">Learn More <img
@@ -154,7 +161,9 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <img src="assets/images/shamiyanavilla2-slide-3.jpg" alt="Card 1" />
+                                    <div class="card-img">
+                                        <img src="assets/images/shamiyanavilla2-slide-3.jpg" class="img" alt="Card 1" />
+                                    </div>
                                     <h3>Shamiyana Luxury Tent II Villa</h3>
                                     <p>Beautiful mountain view.</p>
                                     <a class="slide-learn-more" href="#">Learn More <img
@@ -418,7 +427,26 @@
                             </div>
                         </div>
 
+                        <!-- Progress bar with navigation buttons on either side -->
+                        <div class="testimonial-controls">
+                            <div class="testimonial-button-prev">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
 
+                            <div class="testimonial-progressbar">
+                                <div class="progress-line">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-button-next">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="clear"></div>

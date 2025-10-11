@@ -263,9 +263,80 @@ document.addEventListener("DOMContentLoaded", (event) => {
         updateBannerNavThumbs(bannerSwiper);
       }, bannerContentHideDuration);
     });
+
+  // Function to update progress bar
+  function updateProgressBar(swiper) {
+    const progressFill = document.querySelector(".progress-fill");
+    if (!progressFill) return;
+
+    const totalSlides = swiper.slides.length;
+    const activeIndex = swiper.realIndex;
+    const progress = ((activeIndex + 1) / totalSlides) * 100;
+
+    progressFill.style.width = progress + "%";
+  }
+
+  // Initialize testimonial swiper with progress bar - SINGLE INITIALIZATION
+  const testimonialSwiper = new Swiper(".testimonialSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".testimonial-button-next",
+      prevEl: ".testimonial-button-prev",
+    },
+    on: {
+      init: function () {
+        updateProgressBar(this);
+        updateSlideStyles(this);
+      },
+      slideChange: function () {
+        updateProgressBar(this);
+        updateSlideStyles(this);
+      },
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 25,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+
+  function updateSlideStyles(swiper) {
+    swiper.slides.forEach((slide, index) => {
+      slide.classList.remove("slide-active", "slide-prev", "slide-next");
+
+      if (index === swiper.activeIndex) {
+        slide.classList.add("slide-active");
+      } else if (
+        index === swiper.activeIndex - 1 ||
+        (swiper.activeIndex === 0 && index === swiper.slides.length - 1)
+      ) {
+        slide.classList.add("slide-prev");
+      } else if (
+        index === swiper.activeIndex + 1 ||
+        (swiper.activeIndex === swiper.slides.length - 1 && index === 0)
+      ) {
+        slide.classList.add("slide-next");
+      }
+    });
+  }
 });
 
-// function booking() {
 // Flatpickr Init
 flatpickr("#dateRange", {
   mode: "range",
@@ -346,67 +417,4 @@ document.getElementById("searchBtn").addEventListener("click", () => {
     dates
   )}&guests=${encodeURIComponent(guests)}`;
   window.location.href = url;
-});
-// }
-
-// booking()
-
-// Testimonial Slider
-document.addEventListener("DOMContentLoaded", function () {
-  const testimonialSwiper = new Swiper(".testimonialSwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    centeredSlides: true,
-    loop: true,
-    // autoplay: {
-    //   delay: 4000,
-    //   disableOnInteraction: false,
-    // },
-    navigation: {
-      nextEl: ".testimonial-next",
-      prevEl: ".testimonial-prev",
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 25,
-      },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
-    },
-    on: {
-      init: function () {
-        updateSlideStyles(this);
-      },
-      slideChange: function () {
-        updateSlideStyles(this);
-      },
-    },
-  });
-
-  function updateSlideStyles(swiper) {
-    swiper.slides.forEach((slide, index) => {
-      slide.classList.remove("slide-active", "slide-prev", "slide-next");
-
-      if (index === swiper.activeIndex) {
-        slide.classList.add("slide-active");
-      } else if (
-        index === swiper.activeIndex - 1 ||
-        (swiper.activeIndex === 0 && index === swiper.slides.length - 1)
-      ) {
-        slide.classList.add("slide-prev");
-      } else if (
-        index === swiper.activeIndex + 1 ||
-        (swiper.activeIndex === swiper.slides.length - 1 && index === 0)
-      ) {
-        slide.classList.add("slide-next");
-      }
-    });
-  }
 });

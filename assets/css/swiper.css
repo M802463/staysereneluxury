@@ -17,10 +17,11 @@ body {
 .card {
     background: var(--color-gold);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    overflow: hidden !important;
     text-align: center;
     transition: transform 0.3s;
     padding: 40px;
+    position: relative;
 
 }
 
@@ -42,16 +43,6 @@ body {
     vertical-align: middle;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
 .card h3 {
     margin: 10px 0 5px;
     font-size: 1.2rem;
@@ -63,11 +54,46 @@ body {
     margin-bottom: 15px;
 }
 
-/* Testimonial Section Styles */
-.testimonial-section {
-    /* padding: 60px 0;
-    background: #f8f9fa; */
+.card-img {
+    position: relative;
+    min-width: 50%;
+    overflow: hidden;
+    transition: 0.4s;
 }
+
+.card-img .img {
+    object-fit: cover;
+    transition: 1.3s;
+    height: 260px;
+}
+
+.card-img::after {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+}
+
+.card-img:hover::after {
+    height: 200%;
+    transition: 600ms linear;
+    background-color: transparent;
+}
+
+.card-img:hover img {
+    transform: scale(1.3);
+}
+
+
+
+
+/* testimonial=============== */
+
 
 .testimonial-slider-container {
     position: relative;
@@ -175,35 +201,93 @@ body {
     font-size: 20px;
 }
 
+/* Add this CSS to your stylesheet */
+.testimonial-slider-container {
+    position: relative;
+}
+
+.testimonial-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.testimonial-button-prev,
+.testimonial-button-next {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
 
 
-/* Mobile Responsive */
+.testimonial-button-prev svg,
+.testimonial-button-next svg {
+    color: #333;
+}
+
+.testimonial-progressbar {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.progress-line {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #9e1e1d, #800000c4);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+    width: 0%;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .testimonial-slider-container {
+    .testimonial-controls {
         padding: 0 10px;
+        gap: 15px;
     }
 
-    .testimonial-card {
-        padding: 30px 20px;
+    .testimonial-button-prev,
+    .testimonial-button-next {
+        width: 35px;
+        height: 35px;
+    }
+
+    .testimonial-progressbar {
         margin: 0 10px;
     }
+}
 
-    .testimonial-author {
-        flex-direction: column;
+@media (max-width: 480px) {
+    .testimonial-controls {
         gap: 10px;
     }
 
-    .author-image {
-        width: 50px;
-        height: 50px;
+    .testimonial-button-prev,
+    .testimonial-button-next {
+        width: 30px;
+        height: 30px;
     }
 
-    .testimonial-card p {
-        font-size: 14px;
-        min-height: 60px;
-    }
-
-    .testimonial-navigation {
-        display: none;
+    .testimonial-button-prev svg,
+    .testimonial-button-next svg {
+        width: 16px;
+        height: 16px;
     }
 }

@@ -313,18 +313,20 @@
                             <div class="swiper-wrapper">
                                 <!-- Testimonial 1 -->
                                 <div class="swiper-slide">
-                                    <div class="testimonial-card">
-                                        <div class="testimonial-content">
-                                            <div class="stars">
-                                                <span>★★★★★</span>
-                                            </div>
-                                            <p>"Amazing experience at Stay Serene Luxury! The villa was beautiful and the service was exceptional. Highly recommend for a peaceful getaway."</p>
-                                            <div class="testimonial-author">
-                                                <img src="assets/images/guest1.jpg" alt="Guest" class="author-image">
-                                                <div class="author-info">
-                                                    <h4>Sarah Johnson</h4>
-                                                    <span>Travel Blogger</span>
-                                                </div>
+                                    <div class="dbl-invrted">
+                                        <img src="assets/images/double-quotes.png" class="img" alt="">
+                                    </div>
+                                    <p class="box-text">Ready to book your vacation? Our hotel booking category provides an extensive array of choices, from lavish resorts to economical lodgings, guaranteeing a delightful and unforgettable experience.</p>
+                                    <div class="review-info">
+                                        <div class="review-name">
+                                            <h2>Name</h2>
+                                            <p>designation</p>
+                                        </div>
+                                        <div class="rating-review">
+                                            <div class="review-profile"><img src="assets/images/client-1.jpg" class="img" alt=""></div>
+                                            <div class="rating">
+                                                <span class="star">★</span>
+                                                <span>4.5</span>
                                             </div>
                                         </div>
                                     </div>
@@ -332,18 +334,20 @@
 
                                 <!-- Testimonial 2 -->
                                 <div class="swiper-slide">
-                                    <div class="testimonial-card">
-                                        <div class="testimonial-content">
-                                            <div class="stars">
-                                                <span>★★★★★</span>
-                                            </div>
-                                            <p>"Perfect place for a family vacation. The kids loved the pool and we enjoyed the serene environment. Will definitely come back!"</p>
-                                            <div class="testimonial-author">
-                                                <img src="assets/images/guest2.jpg" alt="Guest" class="author-image">
-                                                <div class="author-info">
-                                                    <h4>Michael Chen</h4>
-                                                    <span>Business Owner</span>
-                                                </div>
+                                    <div class="dbl-invrted">
+                                        <img src="assets/images/double-quotes.png" class="img" alt="">
+                                    </div>
+                                    <p class="box-text">Ready to book your vacation? Our hotel booking category provides an extensive array of choices, from lavish resorts to economical lodgings, guaranteeing a delightful and unforgettable experience.</p>
+                                    <div class="review-info">
+                                        <div class="review-name">
+                                            <h2>Name</h2>
+                                            <p>designation</p>
+                                        </div>
+                                        <div class="rating-review">
+                                            <div class="review-profile"><img src="assets/images/client-1.jpg" class="img" alt=""></div>
+                                            <div class="rating">
+                                                <span class="star">★</span>
+                                                <span>4.5</span>
                                             </div>
                                         </div>
                                     </div>
@@ -351,18 +355,20 @@
 
                                 <!-- Testimonial 3 -->
                                 <div class="swiper-slide">
-                                    <div class="testimonial-card">
-                                        <div class="testimonial-content">
-                                            <div class="stars">
-                                                <span>★★★★★</span>
-                                            </div>
-                                            <p>"Luxury redefined! The Midnight Alpine villa exceeded our expectations. Perfect for our anniversary celebration."</p>
-                                            <div class="testimonial-author">
-                                                <img src="assets/images/guest3.jpg" alt="Guest" class="author-image">
-                                                <div class="author-info">
-                                                    <h4>Emma Williams</h4>
-                                                    <span>Photographer</span>
-                                                </div>
+                                    <div class="dbl-invrted">
+                                        <img src="assets/images/double-quotes.png" class="img" alt="">
+                                    </div>
+                                    <p class="box-text">Ready to book your vacation? Our hotel booking category provides an extensive array of choices, from lavish resorts to economical lodgings, guaranteeing a delightful and unforgettable experience.</p>
+                                    <div class="review-info">
+                                        <div class="review-name">
+                                            <h2>Name</h2>
+                                            <p>designation</p>
+                                        </div>
+                                        <div class="rating-review">
+                                            <div class="review-profile"><img src="assets/images/client-1.jpg" class="img" alt=""></div>
+                                            <div class="rating">
+                                                <span class="star">★</span>
+                                                <span>4.5</span>
                                             </div>
                                         </div>
                                     </div>
@@ -370,18 +376,20 @@
 
                                 <!-- Testimonial 4 -->
                                 <div class="swiper-slide">
-                                    <div class="testimonial-card">
-                                        <div class="testimonial-content">
-                                            <div class="stars">
-                                                <span>★★★★★</span>
-                                            </div>
-                                            <p>"Outstanding hospitality and beautiful surroundings. The nature's touch villa was exactly what we needed for relaxation."</p>
-                                            <div class="testimonial-author">
-                                                <img src="assets/images/guest4.jpg" alt="Guest" class="author-image">
-                                                <div class="author-info">
-                                                    <h4>David Kumar</h4>
-                                                    <span>Software Engineer</span>
-                                                </div>
+                                    <div class="dbl-invrted">
+                                        <img src="assets/images/double-quotes.png" class="img" alt="">
+                                    </div>
+                                    <p class="box-text">Ready to book your vacation? Our hotel booking category provides an extensive array of choices, from lavish resorts to economical lodgings, guaranteeing a delightful and unforgettable experience.</p>
+                                    <div class="review-info">
+                                        <div class="review-name">
+                                            <h2>Name</h2>
+                                            <p>designation</p>
+                                        </div>
+                                        <div class="rating-review">
+                                            <div class="review-profile"><img src="assets/images/client-1.jpg" class="img" alt=""></div>
+                                            <div class="rating">
+                                                <span class="star">★</span>
+                                                <span>4.5</span>
                                             </div>
                                         </div>
                                     </div>
@@ -389,18 +397,20 @@
 
                                 <!-- Testimonial 5 -->
                                 <div class="swiper-slide">
-                                    <div class="testimonial-card">
-                                        <div class="testimonial-content">
-                                            <div class="stars">
-                                                <span>★★★★★</span>
-                                            </div>
-                                            <p>"Exceptional service and breathtaking views. The villa was clean, comfortable, and had everything we needed for a perfect stay."</p>
-                                            <div class="testimonial-author">
-                                                <img src="assets/images/guest5.jpg" alt="Guest" class="author-image">
-                                                <div class="author-info">
-                                                    <h4>Lisa Parker</h4>
-                                                    <span>Interior Designer</span>
-                                                </div>
+                                    <div class="dbl-invrted">
+                                        <img src="assets/images/double-quotes.png" class="img" alt="">
+                                    </div>
+                                    <p class="box-text">Ready to book your vacation? Our hotel booking category provides an extensive array of choices, from lavish resorts to economical lodgings, guaranteeing a delightful and unforgettable experience.</p>
+                                    <div class="review-info">
+                                        <div class="review-name">
+                                            <h2>Name</h2>
+                                            <p>designation</p>
+                                        </div>
+                                        <div class="rating-review">
+                                            <div class="review-profile"><img src="assets/images/client-1.jpg" class="img" alt=""></div>
+                                            <div class="rating">
+                                                <span class="star">★</span>
+                                                <span>4.5</span>
                                             </div>
                                         </div>
                                     </div>

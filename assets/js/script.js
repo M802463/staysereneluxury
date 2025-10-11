@@ -358,10 +358,10 @@ document.addEventListener("DOMContentLoaded", function () {
     spaceBetween: 30,
     centeredSlides: true,
     loop: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 4000,
+    //   disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: ".testimonial-next",
       prevEl: ".testimonial-prev",

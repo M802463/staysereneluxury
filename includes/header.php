@@ -32,7 +32,7 @@
                 </div>
                 <div class="rooms nav-item">
                     <div class="rooms-cover">
-                    <p class="nav-link">rooms</p><i class="fa-solid fa-chevron-down"></i>
+                        <p class="nav-link">rooms</p><i class="fa-solid fa-chevron-down"></i>
                     </div>
                     <div class="dropdown-menu">
                         <div class="dropdown-content">
@@ -80,47 +80,57 @@
             <div class="flex">
                 <div class="hotel nav-item">
                     <div class="rooms-cover">
-                    <p class="nav-link">hotel</p><i class="fa-solid fa-chevron-down"></i>
+                        <p class="nav-link">Villas</p><i class="fa-solid fa-chevron-down"></i>
                     </div>
                     <div class="dropdown-menu">
                         <div class="dropdown-content">
 
                             <a href="#" class="room-card">
                                 <div class="room-image-area">
-                                    <img src="https://picsum.photos/350/260?random=1" alt="Single Room"
+                                    <img src="../assets/images/header-img-1.jpg" alt="Single Room"
                                         class="room-image">
                                 </div>
                                 <div class="room-details">
-                                    <h3 class="room-title">Single Room</h3>
-                                    <p class="room-price">Price Start at <strong>$290</strong></p>
+                                    <h3 class="room-title">Tranqvilla</h3>
+                                    <!-- <p class="room-price">Price Start at <strong>$290</strong></p> -->
                                 </div>
                             </a>
 
                             <a href="#" class="room-card">
                                 <div class="room-image-area">
-                                    <img src="https://picsum.photos/350/260?random=2" alt="Grand Luxury Room"
+                                    <img src="../assets/images/header-img-2.jpg" alt="Grand Luxury Room"
                                         class="room-image">
                                 </div>
                                 <div class="room-details">
-                                    <h3 class="room-title">Grand Luxury Room</h3>
-                                    <p class="room-price">Price Start at <strong>$320</strong></p>
+                                    <h3 class="room-title">Midnight Alpine Villa</h3>
+                                    <!-- <p class="room-price">Price Start at <strong>$320</strong></p> -->
                                 </div>
                             </a>
 
                             <a href="#" class="room-card">
                                 <div class="room-image-area">
-                                    <img src="https://picsum.photos/350/260?random=3" alt="Cozy Room"
+                                    <img src="../assets/images/header-img-3.jpg" alt="Cozy Room"
                                         class="room-image">
                                 </div>
                                 <div class="room-details">
-                                    <h3 class="room-title">Cozy Room</h3>
-                                    <p class="room-price">Price Start at <strong>$370</strong></p>
+                                    <h3 class="room-title">Shamiyana Luxury Tent I</h3>
+                                    <!-- <p class="room-price">Price Start at <strong>$370</strong></p> -->
+                                </div>
+                            </a>
+                            <a href="#" class="room-card">
+                                <div class="room-image-area">
+                                    <img src="../assets/images/header-img-3.jpg" alt="Cozy Room"
+                                        class="room-image">
+                                </div>
+                                <div class="room-details">
+                                    <h3 class="room-title">Shamiyana Luxury Tent II</h3>
+                                    <!-- <p class="room-price">Price Start at <strong>$370</strong></p> -->
                                 </div>
                             </a>
 
-                            <div class="accommodation-label-container">
+                            <!-- <div class="accommodation-label-container">
                                 <p class="accommodation-label">ACCOMMODATION</p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -146,11 +156,11 @@
             <div class="menu-list">
                 <ul>
                     <li><a><i class="fa-solid fa-chevron-right"></i> home</a>
-                        <ul>
+                        <!-- <ul>
                             <li><a href="#"><i class="fa-solid fa-chevron-right"></i> home</a></li>
                             <li><a href="#"><i class="fa-solid fa-chevron-right"></i> home</a></li>
                             <li><a href="#"><i class="fa-solid fa-chevron-right"></i> home</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                     <li><a><i class="fa-solid fa-chevron-right"></i> Villas</a>
                         <ul>

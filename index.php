@@ -123,7 +123,7 @@
 
                     <div class="room-suit-head margin-1">
                         <h3>Top Rated Resort In Murbad</h3>
-                        <h2>Staysereneluxury Hotel In Natural Surroundings</h2>
+                        <h2>Stay Serene Luxury Hotel In Natural Surroundings</h2>
                     </div>
 
                     <div class="col_sm2">
@@ -244,7 +244,7 @@
                     <div class="col_sm2 about-content">
                         <div class="room-suit-head">
                             <h3>Welcome To</h3>
-                            <h2>Staysereneluxury Hotel</h2>
+                            <h2>Stay Serene Luxury Hotel</h2>
                         </div>
                         <p>Stay Serene Luxury is a top-rated resort in Murbad offering elegant villas and luxury tents
                             surrounded by nature. Designed for families, couples, and friends, our villas feature
@@ -278,10 +278,10 @@
 
             <div class="col_sm1 bg_clr3"><br><br>
                 <div class="top">
-                    <div class="row">
+                    <div class="row margin-1">
                         <div class="col-xl-6">
-                            <div class="room-suit-head">
-                                <h3 class="">DISCOVER HOTEL</h3>
+                            <div class="room-suit-head ">
+                                <h3 class="">DISCOVER VILLAS</h3>
                                 <h2 class="sec-title">Stay Packages At Rotal Copenhagen</h2>
                             </div>
                         </div>
@@ -680,9 +680,10 @@
                             <h3>Testimonials</h3>
                             <h2>What Our Guests Say About Us</h2>
                         </div>
-                        <a target="_blank"
-                            href="https://www.google.com/search?q=stay+serene+luxury+%0D%0AReviews&sca_esv=5c05e6a201bfb25d&rlz=1C1CHBF_enIN1080IN1080&sxsrf=AE3TifN86CKQlxECkNcFC6lNCUPS86bEig%3A1759557359536&ei=77bgaMvCIN2NseMP28Di4Q4&hotel_occupancy=&ved=0ahUKEwiL9oH77YmQAxXdRmwGHVugOOwQ4dUDCBE&uact=5&oq=stay+serene+luxury+%0D%0AReviews&gs_lp=Egxnd3Mtd2l6LXNlcnAiG3N0YXkgc2VyZW5lIGx1eHVyeSAKUmV2aWV3czIEECMYJzIOEC4YgAQYxwEYmAUYrwEyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkj3CVC5A1jdB3ABeACQAQCYAcQBoAHEAaoBAzAuMbgBA8gBAPgBAfgBApgCAqAC3AHCAgcQIxiwAxgnwgINEAAYgAQYsAMYQxiKBcICERAuGIAEGLADGMcBGJgFGK8BwgIIEAAYgAQYsAPCAgcQABiwAxgewgIJEAAYsAMYCBgewgIOEAAYgAQYsAMYhgMYigWYAwCIBgGQBgqSBwUxLjAuMaAHrAuyBwMyLTG4B9IBwgcFMi0xLjHIBxM&sclient=gws-wiz-serp#lrd=0x3bdd61abee8124ab:0xaa13a00d757a5511,1"
-                            class="btn-secondary margin-1">VIEW ALL </a>
+                        <div class="sec-btn margin-1">
+                            <a class="btn-primary" target=" _blank" href="https://www.google.com/search?q=stay+serene+luxury+%0D%0AReviews&sca_esv=5c05e6a201bfb25d&rlz=1C1CHBF_enIN1080IN1080&sxsrf=AE3TifN86CKQlxECkNcFC6lNCUPS86bEig%3A1759557359536&ei=77bgaMvCIN2NseMP28Di4Q4&hotel_occupancy=&ved=0ahUKEwiL9oH77YmQAxXdRmwGHVugOOwQ4dUDCBE&uact=5&oq=stay+serene+luxury+%0D%0AReviews&gs_lp=Egxnd3Mtd2l6LXNlcnAiG3N0YXkgc2VyZW5lIGx1eHVyeSAKUmV2aWV3czIEECMYJzIOEC4YgAQYxwEYmAUYrwEyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkj3CVC5A1jdB3ABeACQAQCYAcQBoAHEAaoBAzAuMbgBA8gBAPgBAfgBApgCAqAC3AHCAgcQIxiwAxgnwgINEAAYgAQYsAMYQxiKBcICERAuGIAEGLADGMcBGJgFGK8BwgIIEAAYgAQYsAPCAgcQABiwAxgewgIJEAAYsAMYCBgewgIOEAAYgAQYsAMYhgMYigWYAwCIBgGQBgqSBwUxLjAuMaAHrAuyBwMyLTG4B9IBwgcFMi0xLjHIBxM&sclient=gws-wiz-serp#lrd=0x3bdd61abee8124ab:0xaa13a00d757a5511,1" class="btn-secondary margin-1">VIEW ALL </a>
+
+                        </div>
                     </div>
 
 
@@ -696,20 +697,17 @@
                                     <div class="dbl-invrted">
                                         <img src="assets/images/double-quotes.png" class="img" alt="">
                                     </div>
-                                    <p class="box-text">Ready to book your vacation? Our hotel booking category
-                                        provides an extensive array of choices, from lavish resorts to economical
-                                        lodgings, guaranteeing a delightful and unforgettable experience.</p>
+                                    <p class="box-text">It was a very excited experience as location is really out of expectations and the Bungalow is more than imagination. It was really one of the best experience in my life.
                                     <div class="review-info">
                                         <div class="review-name">
-                                            <h2>Name</h2>
-                                            <p>designation</p>
+                                            <h2>suresh kolte</h2>
+                                            <!-- <p>designation</p> -->
                                         </div>
                                         <div class="rating-review">
-                                            <div class="review-profile"><img src="assets/images/client-1.jpg"
-                                                    class="img" alt=""></div>
+                                            <div class="review-profile"><img src="assets/images/client-1.jpg" class="img" alt=""></div>
                                             <div class="rating">
                                                 <span class="star">★</span>
-                                                <span>4.5</span>
+                                                <span>4.6</span>
                                             </div>
                                         </div>
                                     </div>
@@ -720,20 +718,19 @@
                                     <div class="dbl-invrted">
                                         <img src="assets/images/double-quotes.png" class="img" alt="">
                                     </div>
-                                    <p class="box-text">Ready to book your vacation? Our hotel booking category
-                                        provides an extensive array of choices, from lavish resorts to economical
-                                        lodgings, guaranteeing a delightful and unforgettable experience.</p>
+                                    <p class="box-text">Had a great time at the property! The food was very homely and delicious. We will definitely come back for a stay. <br>
+                                        Thankyou for having us.</p>
                                     <div class="review-info">
                                         <div class="review-name">
-                                            <h2>Name</h2>
-                                            <p>designation</p>
+                                            <h2>
+                                                Sonia Guptan</h2>
+                                            <!-- <p>designation</p> -->
                                         </div>
                                         <div class="rating-review">
-                                            <div class="review-profile"><img src="assets/images/client-1.jpg"
-                                                    class="img" alt=""></div>
+                                            <div class="review-profile"><img src="assets/images/client-2.jpg" class="img" alt=""></div>
                                             <div class="rating">
                                                 <span class="star">★</span>
-                                                <span>4.5</span>
+                                                <span>4.6</span>
                                             </div>
                                         </div>
                                     </div>
@@ -744,20 +741,22 @@
                                     <div class="dbl-invrted">
                                         <img src="assets/images/double-quotes.png" class="img" alt="">
                                     </div>
-                                    <p class="box-text">Ready to book your vacation? Our hotel booking category
-                                        provides an extensive array of choices, from lavish resorts to economical
-                                        lodgings, guaranteeing a delightful and unforgettable experience.</p>
+                                    <p class="box-text">Had a pleasant stay with my family.
+                                        Very scenic and heavenly location.
+                                        Good service and management.
+                                        Supportive staff.</p>
                                     <div class="review-info">
                                         <div class="review-name">
-                                            <h2>Name</h2>
-                                            <p>designation</p>
+                                            <h2>
+
+                                                Vishwajeet Singh</h2>
+                                            <!-- <p>designation</p> -->
                                         </div>
                                         <div class="rating-review">
-                                            <div class="review-profile"><img src="assets/images/client-1.jpg"
-                                                    class="img" alt=""></div>
+                                            <div class="review-profile"><img src="assets/images/client-3.jpg" class="img" alt=""></div>
                                             <div class="rating">
                                                 <span class="star">★</span>
-                                                <span>4.5</span>
+                                                <span>4.6</span>
                                             </div>
                                         </div>
                                     </div>
@@ -768,20 +767,18 @@
                                     <div class="dbl-invrted">
                                         <img src="assets/images/double-quotes.png" class="img" alt="">
                                     </div>
-                                    <p class="box-text">Ready to book your vacation? Our hotel booking category
-                                        provides an extensive array of choices, from lavish resorts to economical
-                                        lodgings, guaranteeing a delightful and unforgettable experience.</p>
+                                    <p class="box-text">I had an amazing and peaceful experience with my partner. The staff was extremely supportive and attentive, making our visit even more enjoyable. I highly recommend this place. it’s a must-visit!</p>
                                     <div class="review-info">
                                         <div class="review-name">
-                                            <h2>Name</h2>
-                                            <p>designation</p>
+                                            <h2>
+                                                Monika Singh</h2>
+                                            <!-- <p>designation</p> -->
                                         </div>
                                         <div class="rating-review">
-                                            <div class="review-profile"><img src="assets/images/client-1.jpg"
-                                                    class="img" alt=""></div>
+                                            <div class="review-profile"><img src="assets/images/client-4.jpg" class="img" alt=""></div>
                                             <div class="rating">
                                                 <span class="star">★</span>
-                                                <span>4.5</span>
+                                                <span>4.6</span>
                                             </div>
                                         </div>
                                     </div>
@@ -792,20 +789,17 @@
                                     <div class="dbl-invrted">
                                         <img src="assets/images/double-quotes.png" class="img" alt="">
                                     </div>
-                                    <p class="box-text">Ready to book your vacation? Our hotel booking category
-                                        provides an extensive array of choices, from lavish resorts to economical
-                                        lodgings, guaranteeing a delightful and unforgettable experience.</p>
+                                    <p class="box-text">Our stay in the Shamiyana Tents at Stay Serene Luxury was pure bliss. The tents were comfortable, and the attached swimming pools added a touch of luxury. If you're looking for a resort near Malshej Ghat, this is the place. Highly recommended for a relaxing getaway. </p>
                                     <div class="review-info">
                                         <div class="review-name">
-                                            <h2>Name</h2>
-                                            <p>designation</p>
+                                            <h2>Tanvi Shinde</h2>
+                                            <!-- <p>designation</p> -->
                                         </div>
                                         <div class="rating-review">
-                                            <div class="review-profile"><img src="assets/images/client-1.jpg"
-                                                    class="img" alt=""></div>
+                                            <div class="review-profile"><img src="assets/images/client-5.jpg" class="img" alt=""></div>
                                             <div class="rating">
                                                 <span class="star">★</span>
-                                                <span>4.5</span>
+                                                <span>4.6</span>
                                             </div>
                                         </div>
                                     </div>
@@ -817,8 +811,7 @@
                         <div class="testimonial-controls">
                             <div class="testimonial-button-prev">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
 
@@ -830,8 +823,7 @@
 
                             <div class="testimonial-button-next">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
                         </div>
@@ -856,7 +848,12 @@
                     <div class="col_sm3_3 gallery-card_wrapp">
                         <div class="gallery-card">
                             <div class="box-img">
-                                <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
+                                <!-- <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image"> -->
+                                <a href="assets/images/gallery_img-1.jpg"
+                                    data-fancybox="gallery">
+                                    <img src="assets/images/gallery_img-1.jpg"
+                                        class="bg" alt="Gallery Image">
+                                </a>
                             </div>
                         </div>
                         <!-- <a href="https://images.pexels.com/photos/1125273/pexels-photo-1125273.jpeg?cs=srgb&dl=abstract-art-blur-1125273.jpg&fm=jpg"
@@ -867,7 +864,11 @@
 
                         <div class="gallery-card mrg-top">
                             <div class="box-img">
-                                <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
+                                <a href="assets/images/gallery_img-2.jpg"
+                                    data-fancybox="gallery">
+                                    <img src="assets/images/gallery_img-2.jpg"
+                                        class="bg" alt="Gallery Image">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -875,12 +876,20 @@
                     <div class="col_sm3_3 gallery-card_wrapp gallery-img-margin">
                         <div class="gallery-card">
                             <div class="box-img">
-                                <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
+                                <a href="assets/images/gallery_img-3.jpg"
+                                    data-fancybox="gallery">
+                                    <img src="assets/images/gallery_img-3.jpg"
+                                        class="bg" alt="Gallery Image">
+                                </a>
                             </div>
                         </div>
                         <div class="gallery-card mrg-top">
                             <div class="box-img">
-                                <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
+                                <a href="assets/images/gallery_img-4.jpg"
+                                    data-fancybox="gallery">
+                                    <img src="assets/images/gallery_img-4.jpg"
+                                        class="bg" alt="Gallery Image">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -888,26 +897,42 @@
                     <div class="col_sm3_3 gallery-card_wrapp gallery-img-margin2 hidInMob">
                         <div class="gallery-card">
                             <div class="box-img">
-                                <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
+                                <a href="assets/images/gallery_img-5.jpg"
+                                    data-fancybox="gallery">
+                                    <img src="assets/images/gallery_img-5.jpg"
+                                        class="bg" alt="Gallery Image">
+                                </a>
                             </div>
                         </div>
                         <div class="gallery-card mrg-top">
                             <div class="box-img">
-                                <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
+                                <a href="assets/images/gallery_img-6.jpg"
+                                    data-fancybox="gallery">
+                                    <img src="assets/images/gallery_img-6.jpg"
+                                        class="bg" alt="Gallery Image">
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="col_sm3_3 hidInDesk">
                         <div class="gallery-card">
                             <div class="box-img">
-                                <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
+                                <a href="assets/images/gallery_img-7.jpg"
+                                    data-fancybox="gallery">
+                                    <img src="assets/images/gallery_img-7.jpg"
+                                        class="bg" alt="Gallery Image">
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="col_sm3_3 hidInDesk">
                         <div class="gallery-card">
                             <div class="box-img">
-                                <img src="assets/images/gallery_3_1.jpg" class="img" alt="gallery image">
+                                <a href="assets/images/gallery_img-8.jpg"
+                                    data-fancybox="gallery">
+                                    <img src="assets/images/gallery_img-8.jpg"
+                                        class="bg" alt="Gallery Image">
+                                </a>
                             </div>
                         </div>
                     </div>

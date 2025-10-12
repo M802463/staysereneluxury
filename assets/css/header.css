@@ -107,8 +107,7 @@ i {
 }
 
 .rooms-cover {
-    display: flex
-;
+    display: flex;
     align-items: center;
     gap: 10px;
     width: 100%;
@@ -349,7 +348,7 @@ i {
 .dropdown-content {
     padding: 20px 20px 20px 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
     row-gap: 20px;
     justify-content: center;
@@ -368,7 +367,7 @@ i {
 
 .room-card:hover {
     transform: translateY(-3px);
-        box-shadow: 0px 10px 23px 0px #c49a4c66;
+    box-shadow: 0px 10px 23px 0px #c49a4c66;
 }
 
 .room-image-area {

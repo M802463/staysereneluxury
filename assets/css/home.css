@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Prata&display=swap');
 
 :root {
   --color-maroon: #800000;
   --color-gold: #C49A4C;
   --color-cream: #EEE8AA;
   --color-dark: #1C1C1C;
-  --font-heading: "Noto Serif Display", serif;
+  --font-heading: "Prata", serif;
   --font-body: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -38,6 +38,7 @@ body {
   background-color: #fff;
   color: var(--color-dark);
   position: relative;
+  scroll-behavior: smooth;
 }
 
 /* Scrollbar ka width */
@@ -168,7 +169,7 @@ body {
 }
 
 .banner {
-  padding-top: 153px;
+  padding-top: 137px;
 }
 
 .mrg-top {
@@ -197,6 +198,118 @@ body {
   align-items: center;
 }
 
+
+.button-scroll {
+  position: relative;
+}
+
+.scroll-down {
+  width: 102px;
+  height: 38px;
+  clip-path: path("M26.1761 14.5597C29.6935 5.76616 38.2103 0 47.6813 0H56.3187C65.7897 0 74.3065 5.76616 77.8239 14.5597C79.2521 18.1303 81.547 21.2891 84.5013 23.7511L104 40H0L19.4987 23.7511C22.453 21.2891 24.7479 18.1303 26.1761 14.5597Z");
+  background-color: #800000;
+  position: absolute;
+  bottom: 7px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 999;
+  scale: 1.4;
+}
+
+@media (max-width: 1699px) {
+  .scroll-down {
+    display: none
+  }
+}
+
+.scroll-down .hero-scroll-wrap {
+  display: inline-block;
+  width: 30px
+}
+
+.scroll-down .hero-scroll-wrap span {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--body-font);
+  color: var(--light-color);
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: translate(-100%, -50%) rotate(-90deg);
+  -ms-transform: translate(-100%, -50%) rotate(-90deg);
+  transform: translate(-100%, -50%) rotate(-90deg);
+  width: 100px;
+  display: inline-block;
+  margin-bottom: 76px
+}
+
+.scroll-down .hero-scroll-wrap:after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 12px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scroll-down .hero-scroll-wrap:before {
+  content: "";
+  height: 3px;
+  width: 3px;
+  border-radius: 50px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 65%;
+  left: 47%;
+  /* transform: translateX(57%); */
+  animation: scrollMove 1.5s infinite;
+}
+
+@keyframes scrollMove {
+  0% {
+    opacity: 0;
+    transform: translate(50%, 0px)
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(50%, 10px)
+  }
+
+  100% {
+    opacity: 0;
+    /* -webkit-transform: translateY(10px); */
+    transform: translate(50%, 10px)
+  }
+}
+
+@media (max-width: 575px) {
+  .scroll-down .hero-scroll-wrap {
+    margin-top: 60px
+  }
+}
+
+@media (max-width: 1500px) {
+  .scroll-down {
+    bottom: 40px
+  }
+
+  .scroll-down .hero-scroll-wrap span {
+    display: none
+  }
+}
+
+@media (max-width: 575px) {
+  .scroll-down {
+    right: 50%;
+    -webkit-transform: translate(50%, 0);
+    -ms-transform: translate(50%, 0);
+    transform: translate(50%, 0)
+  }
+}
 
 /* ==================== */
 /* ==================== */
@@ -229,12 +342,11 @@ body {
 }
 
 .room-suit-head h2 {
-  font-family: "Noto Serif Display", serif;
-  font-size: 38px;
+  font-family: var(--font-heading);
+  font-size: 48px;
   font-weight: 500;
   color: var(--color-maroon);
   line-height: 140%;
-  margin: 0;
   position: relative;
   display: block;
 }
@@ -274,24 +386,22 @@ body {
 }
 
 .room-suit-head2 h2 {
-  font-family: "Noto Serif Display", serif;
+  font-family: var(--font-heading);
   font-size: 30px;
   font-weight: 500;
   color: #ffffff;
   line-height: 140%;
-  margin: 0;
   position: relative;
   display: block;
   margin-top: 10px;
 }
 
 .room-suit-head2 p {
-  font-family: "Noto Serif Display", serif;
+  font-family: var(--font-heading);
   font-size: 16px;
   font-weight: 400;
   color: #ffffff;
   line-height: 140%;
-  margin: 0;
   position: relative;
   display: block;
   margin-top: 22px;
@@ -958,7 +1068,7 @@ body {
 
 .banner-swiper {
   width: 100%;
-  height: calc(100vh - 153px);
+  height: calc(100vh + 10px);
   position: relative;
 }
 
@@ -990,32 +1100,17 @@ body {
   text-transform: uppercase;
   color: #fff;
   font-weight: 900;
-  font-family: "Noto Serif Display", serif;
+  font-family: var(--font-heading);
   line-height: 140%;
 }
 
 .banner-content p {
-  font-family: 'Plus Jakarta Sans';
+  font-family: var(--body-font);
   font-size: 18px;
   color: #fff;
   line-height: 140%;
   font-weight: 400;
   margin-bottom: 35px;
-}
-
-.banner-content a {
-  display: inline-block;
-  padding: 0.7rem 1.8rem;
-  background: #fff;
-  color: #000;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.banner-content a:hover {
-  background: #c49a4c;
-  color: #fff;
 }
 
 /* Navigation Buttons */
@@ -1051,13 +1146,14 @@ body {
   height: 100%;
   background-size: cover;
   background-position: center;
-  filter: brightness(0.8);
+  filter: brightness(1.2);
   transition: background-image 0.6s ease, transform 0.4s ease;
 }
 
 .banner-button-prev:hover .nav-thumb,
 .banner-button-next:hover .nav-thumb {
   transform: scale(1.05);
+  filter: brightness(0.8);
 }
 
 .banner-button-next::after,
@@ -1067,6 +1163,15 @@ body {
   font-size: 22px;
   color: #fff;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  scale: 0;
+  transition: all .2s linear;
+}
+
+.banner-button-prev:hover::after,
+.banner-button-next:hover::after {
+  opacity: 1;
+  scale: 1;
 }
 
 .banner-button-prev::after {
@@ -1077,23 +1182,7 @@ body {
   content: "→";
 }
 
-.button-scroll {
-  position: relative;
-}
 
-.button-scroll::before {
-  content: "";
-  width: 102px;
-  height: 38px;
-  clip-path: path("M26.1761 14.5597C29.6935 5.76616 38.2103 0 47.6813 0H56.3187C65.7897 0 74.3065 5.76616 77.8239 14.5597C79.2521 18.1303 81.547 21.2891 84.5013 23.7511L104 40H0L19.4987 23.7511C22.453 21.2891 24.7479 18.1303 26.1761 14.5597Z");
-  background-color: #800000;
-  position: absolute;
-  bottom: 7px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  z-index: 999;
-  scale: 1.4;
-}
 
 /* ==================== */
 /* ==================== */
@@ -1111,6 +1200,7 @@ body {
   gap: 12px;
   flex-wrap: wrap;
   background-color: #c49a4c;
+  align-items: flex-end;
 }
 
 .custom-select {
@@ -1122,6 +1212,7 @@ body {
 }
 
 .input-label {
+  font-family: var(--font-body);
   display: block;
   margin-bottom: 6px;
   font-weight: 600;
@@ -1130,6 +1221,7 @@ body {
 }
 
 .select-selected {
+  font-family: var(--font-body);
   background: transparent;
   color: #1C1C1C;
   border: 1px solid #800000f2;
@@ -1138,6 +1230,7 @@ body {
   position: relative;
   z-index: 2;
   transition: 0.3s;
+  height: 44px;
 }
 
 .select-selected:hover {
@@ -1195,10 +1288,19 @@ body {
   z-index: 2;
   transition: 0.3s;
   outline: none;
+  height: 44px;
 }
 
-button {
+#dateRange::placeholder {
+  font-family: var(--body-font);
+  color: #1C1C1C;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.booking-form button {
   background: #800000;
+  font-size: 13px;
   color: #fff;
   border: none;
   padding: 12px 20px;
@@ -1206,21 +1308,26 @@ button {
   font-weight: 600;
   letter-spacing: 0.5px;
   transition: 0.3s;
+  height: 44px;
 }
 
-button:hover {
-  background: #c49a4c;
-  transform: translateY(-2px);
+.booking-icon {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, 30%);
+  color: #9e1e1d;
+  right: 0;
 }
 
 .guest-dropdown {
   position: absolute;
-  top: calc(100% + 6px);
+  top: calc(100% + 0px);
   left: 0;
-  width: 260px;
+  width: 100%;
   background: #fff;
   border: 2px solid #C49A4C;
-  border-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   display: none;
   padding: 15px;
@@ -1252,20 +1359,21 @@ button:hover {
 
 .guest-controls button {
   background: #C49A4C;
-  border: none;
   color: #fff;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   font-size: 18px;
   line-height: 1;
   padding: 0;
   transition: 0.3s;
+  border: 2px solid #800000;
 }
 
 .guest-controls button:hover {
-  background: #bfa02b;
+  background: #fff;
+  color: #800000;
+  border: 2px solid #C49A4C;
 }
 
 .guest-count {
@@ -1291,14 +1399,16 @@ button:hover {
 
 
 .villa-card {
-  background: var(--color-gold);
+  background: #c49a4c;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden !important;
   text-align: center;
   transition: transform 0.3s;
   padding: 25px;
+  border-style: ridge;
   position: relative;
-
+  border-width: 15px;
+  border-color: #800;
 }
 
 .villa-card .icon-num {
@@ -1315,7 +1425,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px;
+  padding: 20px;
 }
 
 .villa-card .icon-num .crd-icon img {
@@ -1327,10 +1437,20 @@ button:hover {
   transform: rotateY(360deg);
 }
 
+.villa-card:hover .icon-num .crd-num {
+  opacity: 1;
+}
+
 .villa-card .icon-num .crd-num {
-  color: #ffffff;
-  font-size: 50px;
+  color: #ece6a9;
+  font-size: 61px;
   font-family: var(--font-body);
+  /* color: transparent; */
+  -webkit-text-stroke-width: thin;
+  -webkit-text-stroke-color: #7f0000;
+  opacity: 0.2;
+  font-weight: 900;
+  transition: all .3s linear;
 }
 
 .villa-card .slide-learn-more {
@@ -1340,12 +1460,10 @@ button:hover {
   line-height: 1.2;
   color: #fff;
   margin-top: 24px;
-  border: 1px solid;
-  padding: 10px 15px;
 }
 
 .villa-card .slide-learn-more img {
-  width: 15px;
+  width: 23px;
   height: auto;
   margin-left: 5px;
   display: inline-block;
@@ -1354,20 +1472,28 @@ button:hover {
   vertical-align: middle;
 }
 
+.slide-learn-more:hover img {
+  filter: invert(1);
+}
+
 .villa-card h3 {
-  margin: 10px 0 5px;
-  font-size: 39px;
+  margin: 15px 0 0px;
+  font-size: 30px;
+  line-height: 140%;
   color: #ffffff;
   text-align: left;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: var(--font-heading);
+  font-weight: 600;
 }
 
 .villa-card p {
   color: #ffffff;
   margin-bottom: 15px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 20px;
+  font-family: var(--font-body);
+  font-size: 16px;
   text-align: left;
+  font-weight: 400;
+  line-height: 140%;
 }
 
 .card-img {
@@ -1375,7 +1501,7 @@ button:hover {
   min-width: 50%;
   overflow: hidden;
   transition: 0.4s;
-  border-radius: 20px;
+  border-radius: 8px;
 }
 
 .card-img .img {
@@ -1405,6 +1531,369 @@ button:hover {
   transform: scale(1.3);
 }
 
+/* ==================== */
+/* ==================== */
+/* ===AmenitiesSection=== */
+/* ==================== */
+/* ==================== */
+
+/* --- 2. Section and Container Layout --- */
+.package-area {
+  padding: 80px 0 100px;
+  background-color: #1f3d3d;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232e4d4d' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 0h3v3H0V0zm3 3h3v3H3V3z'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.slider-area {
+  overflow: hidden;
+}
+
+/* --- 3. Header Title Area (No changes needed) --- */
+.sub-title2.style1 {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-dark);
+  margin-bottom: 10px;
+  display: block;
+  margin-left: 67px;
+}
+
+.sec-title {
+  font-family: var(--font-body);
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-maroon);
+  margin: 0;
+}
+
+.box-title {
+  font-size: 24px;
+  line-height: 1.417;
+  font-weight: 600;
+  margin-top: -0.24em
+}
+
+.box-title a {
+  color: var(--color-maroon);
+}
+
+.box-title a:hover {
+  color: var(--color-maroon);
+}
+
+.box-subtitle {
+  margin-bottom: 8px
+}
+
+.box-title2 {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin-top: -0.35em
+}
+
+.box-title2 a {
+  color: inherit
+}
+
+.box-title2 a:hover {
+  color: #800000;
+}
+
+.sec-title span {
+  color: #D4AF37;
+}
+
+/* --- 4. "EXPLORE ALL" Button (No changes needed) --- */
+.sec-btn .th-btn {
+  background-color: transparent;
+  color: ffffff;
+  padding: 12px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+/* --- 5. Swiper Slider Customization (Smooth Transitions) --- */
+.package-list-area {
+  position: relative;
+}
+
+.packageSlider1 {
+  margin: 0 !important;
+  padding-bottom: 50px;
+  padding-right: 0 !important;
+}
+
+/* Swiper's smooth movement for the entire wrapper (800ms) */
+.packageSlider1 .swiper-wrapper {
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+
+/* Default (inactive) slide width */
+.packageSlider1 .swiper-slide {
+  width: calc(30vw) !important;
+  max-width: 402px !important;
+  /* Slow Width Transition: 1.2s duration */
+  transition: width 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  .packageSlider1 .swiper-slide {
+    width: 80% !important;
+    max-width: none !important;
+    margin: 0 auto;
+  }
+}
+
+/* Active slide width (expands) */
+.packageSlider1 .swiper-slide.swiper-slide-active {
+  width: calc(60vw) !important;
+  max-width: 828px !important;
+}
+
+@media (max-width: 1500px) {
+  .packageSlider1 .swiper-slide.swiper-slide-active {
+    width: calc(50vw) !important;
+    max-width: 650px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .packageSlider1 .swiper-slide.swiper-slide-active {
+    width: 90% !important;
+    max-width: none !important;
+  }
+}
+
+
+/* --- 6. Package List Card Styling (Border & Arrow Visibility) --- */
+.package-list {
+  position: relative;
+  height: 527px;
+  z-index: 2;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Dark Overlay */
+.package-list:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgb(196 154 54), rgb(195 155 57 / 22%));
+  z-index: -1;
+}
+
+/* ACTIVE BORDER: The gold border */
+.package-list:after {
+  content: "";
+  position: absolute;
+  inset: 16px;
+  border: 2px solid var(--color-maroon);
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), visibility 0.5s ease-out;
+}
+
+/* Content wrapper (Rotated position for INACTIVE slides) */
+.package-list .package-content {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  height: 527px;
+  width: 100%;
+  transform: rotate(-90deg) translate(-50%, 0);
+  transform-origin: top left;
+  transition: transform 0.01s, bottom 0.01s, left 0.01s, top 0.01s;
+}
+
+/* VERTICAL GOLD LINE (on INACTIVE slides) */
+.package-list .package-content:before {
+  content: "";
+  position: absolute;
+  left: 27px;
+  top: -18px;
+  width: 2px;
+  height: 50px;
+  background-color: var(--color-maroon);
+  transition: all 0.01s;
+  rotate: 90deg;
+}
+
+/* Content (Normal position for ACTIVE slides) */
+.packageSlider1 .swiper-slide.swiper-slide-active .package-list .package-content {
+  transform: none;
+  top: unset;
+  bottom: 62px;
+  left: 52px;
+  right: unset;
+  width: auto;
+  height: auto;
+}
+
+/* HIDE GOLD LINE (on ACTIVE slides) */
+.packageSlider1 .swiper-slide.swiper-slide-active .package-list .package-content:before {
+  /* opacity: 0;
+  visibility: hidden; */
+}
+
+/* ACTIVE ARROW BUTTON: Bottom Right */
+.package-list .icon-btn {
+  position: absolute;
+  right: 65px;
+  bottom: 70px;
+  background: #fff;
+  border: 2px solid var(--color-maroon);
+  backdrop-filter: blur(5px);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
+  visibility: hidden;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  z-index: 3;
+}
+
+.package-list .icon-btn img {
+  width: 50%;
+  display: block;
+  filter: invert();
+}
+
+.package-list .icon-btn:hover img {
+  filter: invert(0);
+}
+
+.package-list .icon-btn:hover {
+  background: var(--color-maroon);
+  border: 2px solid var(--color-cream);
+
+}
+
+
+/* Active Slide Visibility (Fade in content, border, and arrow) */
+.packageSlider1 .swiper-slide.swiper-slide-active .package-list:after,
+.packageSlider1 .swiper-slide.swiper-slide-active .package-list .icon-btn,
+.packageSlider1 .swiper-slide.swiper-slide-active .package-list .meta {
+  opacity: 1;
+  visibility: visible;
+}
+
+.package-list .meta {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+/* --- 7. Swiper Navigation Customization (No changes needed) --- */
+.slider-controller {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 1400px;
+  padding-right: 15px;
+  margin: 40px auto 0;
+  align-items: center;
+  position: relative;
+}
+
+@media (max-width: 1400px) {
+  .slider-controller {
+    justify-content: center;
+    padding: 0 15px;
+  }
+}
+
+.slider-pagination.swiper-pagination-progressbar {
+    flex-grow: 1;
+    height: 3px !important;
+    background: rgb(196 154 76);
+    margin: 0 15px;
+    position: relative;
+    top: 0;
+    border-radius: 1px;
+    width: fit-content !important;
+}
+
+.slider-pagination .swiper-pagination-progressbar-fill {
+  background: #800000 !important;
+  height: 3px !important;
+  top: -1px;
+  border-radius: 2px;
+}
+
+.slider-arrow {
+  cursor: pointer;
+  background: #ffffff;
+  border: 2px solid rgb(118 0 0);
+  border-radius: 50%;
+  color: #000;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 10;
+}
+
+.slider-arrow img {
+  width: 50%;
+  display: block;
+  filter: invert(1);
+}
+
+.slider-arrow:hover {
+    background: var(--color-maroon);
+    border: 4px solid var(--color-gold);
+}
+
+.slider-arrow:hover img {
+  filter: invert(0);
+}
 
 
 @media (max-width: 1600px) {
@@ -2035,7 +2524,7 @@ button:hover {
   gap: 30px;
   position: absolute;
   left: 24px;
-  bottom: -80px;
+  bottom: -101px;
   z-index: 2;
 }
 
@@ -2049,7 +2538,7 @@ button:hover {
   content: "";
   position: absolute;
   left: -24px;
-  top: 0;
+  top: px;
   width: 678px;
   height: 245px;
   background: #eee8aa;
@@ -2057,11 +2546,9 @@ button:hover {
 }
 
 .img-box .about-wrapp:after {
-
   background: var(--color-maroon);
   height: 269px;
   z-index: -2;
-
 }
 
 .flex {
@@ -2082,9 +2569,9 @@ button:hover {
 .about-content p {
   font-family: var(--body-font);
   margin: 16px 0 18px 0;
-  color: #000;
-  line-height: 1.625;
-  font-size: 20px;
+  color: var(--color-dark);
+  line-height: 140%;
+  font-size: 16px;
   text-align: justify;
 }
 
@@ -2350,6 +2837,126 @@ button:hover {
   pointer-events: none;
 }
 
+/* --- Main Container --- */
+.hotel-hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* --- Background Media Layer --- */
+.unique-bg-media-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.unique-bg-media-layer img,
+.unique-bg-media-layer iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.unique-bg-media-layer iframe {
+  display: none;
+}
+
+/* --- Overlay Content --- */
+.unique-content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* --- Center Alignment --- */
+.unique-center-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- Unique Play Button --- */
+.unique-play-btn {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.unique-play-btn:hover {
+  transform: scale(1.05);
+  background-color: #fff;
+}
+
+.unique-play-icon {
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 18px solid #1a423a;
+  margin-left: 3px;
+}
+
+/* --- Rotating Text SVG --- */
+.unique-rotating-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.unique-rotating-text-box svg {
+  width: 180px;
+  height: 180px;
+  animation: unique-rotate-anim 15s linear infinite;
+}
+
+/* Unique Keyframe Name */
+@keyframes unique-rotate-anim {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.unique-svg-text {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 6.7px;
+}
+
+/* Class for hiding overlay on video play */
+.unique-hidden-overlay {
+  opacity: 0;
+  pointer-events: none;
+}
 
 
 /* Responsive design */

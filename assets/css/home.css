@@ -1477,7 +1477,7 @@ body {
 }
 
 .villa-card h3 {
-  margin: 15px 0 0px;
+  margin: 15px 0 15px;
   font-size: 30px;
   line-height: 140%;
   color: #ffffff;
@@ -2486,7 +2486,7 @@ body {
 .about-section .img-box {
   position: relative;
   z-index: 2;
-  margin-bottom: 104px;
+  /* margin-bottom: 104px; */
   box-sizing: border-box;
 }
 
@@ -2570,8 +2570,8 @@ body {
   font-family: var(--body-font);
   margin: 16px 0 18px 0;
   color: var(--color-dark);
-  line-height: 140%;
-  font-size: 16px;
+  line-height: 170%;
+  font-size: 20px;
   text-align: justify;
 }
 

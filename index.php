@@ -79,10 +79,10 @@
 
                                 <div class="select-selected">Select Villa</div>
                                 <div class="select-items">
-                                    <div data-value="Villa Sunshine">Villa Sunshine</div>
-                                    <div data-value="Villa Paradise">Villa Paradise</div>
-                                    <div data-value="Villa Oceanview">Villa Oceanview</div>
-                                    <div data-value="Villa Serenity">Villa Serenity</div>
+                                    <div data-value="Tranqvilla">Tranqvilla</div>
+                                    <div data-value="Midnight Alpine – A Shape Villa">Midnight Alpine – A Shape Villa</div>
+                                    <div data-value="Shamiyana Luxury Tent I">Shamiyana Luxury Tent I</div>
+                                    <div data-value="Shamiyana Luxury Tent II">Shamiyana Luxury Tent II</div>
                                 </div>
                             </div>
                         </div>

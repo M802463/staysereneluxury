@@ -1,3 +1,5 @@
+ <button id="backToTopBtn" title="Go to top">
+  &#9650; </button>
 <nav id="header">
     <section>
         <div class="top flex-between">

@@ -8,6 +8,34 @@ document.addEventListener("DOMContentLoaded", (event) => {
     effects: true,
   });
 
+  // scroll to top
+
+  window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  const btn = document.getElementById("backToTopBtn");
+  const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+  const scrolled = (winScroll / height) * 100;
+
+  if (winScroll > 20) {
+    btn.style.display = "flex"; 
+  } else {
+    btn.style.display = "none";
+  }
+
+  if (height > 0) {
+    btn.style.setProperty('--scroll-progress', scrolled + '%');
+  }
+}
+
+// 4. Back to Top Functionality
+document.getElementById("backToTopBtn").onclick = function() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For others
+}
+
   // light box
   $(document).ready(function(){
     $('.gallery > div.bg').each(function(){

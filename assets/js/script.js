@@ -7,71 +7,71 @@ document.addEventListener("DOMContentLoaded", (event) => {
     smooth: 2,
     effects: true,
   });
-
+  
   // scroll to top
 
-  window.onscroll = function() {scrollFunction()};
+  window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
-  const btn = document.getElementById("backToTopBtn");
-  const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  function scrollFunction() {
+    const btn = document.getElementById("backToTopBtn");
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
-  const scrolled = (winScroll / height) * 100;
+    const scrolled = (winScroll / height) * 100;
 
-  if (winScroll > 20) {
-    btn.style.display = "flex"; 
-  } else {
-    btn.style.display = "none";
+    if (winScroll > 20) {
+      btn.style.display = "flex";
+    } else {
+      btn.style.display = "none";
+    }
+
+    if (height > 0) {
+      btn.style.setProperty('--scroll-progress', scrolled + '%');
+    }
   }
 
-  if (height > 0) {
-    btn.style.setProperty('--scroll-progress', scrolled + '%');
+  // 4. Back to Top Functionality
+  document.getElementById("backToTopBtn").onclick = function () {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For others
   }
-}
-
-// 4. Back to Top Functionality
-document.getElementById("backToTopBtn").onclick = function() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For others
-}
 
   // light box
-  $(document).ready(function(){
-    $('.gallery > div.bg').each(function(){
-        var link = $(this).css('background-image');
-        link = link.replace(/(url\(|\)|")/g, ''); // Extract clean image URL
-        
-        // Create an <img> tag and insert it inside the <a> tag
-        var imgTag = $('<img>').attr('src', link).attr('alt', 'Gallery Image');
-        
-        // Wrap <div class="bg"> with <a> and append <img> inside <a>
-        $(this).wrap('<a href="" data-fancybox="gallery"></a>').after(imgTag);
-        
-        // Set <a> href to image link
-        $(this).parent('a').attr('href', link);
-        
-        // Optionally, remove the background image to avoid duplication
-        $(this).css('background-image', 'none');
+  $(document).ready(function () {
+    $('.gallery > div.bg').each(function () {
+      var link = $(this).css('background-image');
+      link = link.replace(/(url\(|\)|")/g, ''); // Extract clean image URL
+
+      // Create an <img> tag and insert it inside the <a> tag
+      var imgTag = $('<img>').attr('src', link).attr('alt', 'Gallery Image');
+
+      // Wrap <div class="bg"> with <a> and append <img> inside <a>
+      $(this).wrap('<a href="" data-fancybox="gallery"></a>').after(imgTag);
+
+      // Set <a> href to image link
+      $(this).parent('a').attr('href', link);
+
+      // Optionally, remove the background image to avoid duplication
+      $(this).css('background-image', 'none');
     });
 
     $("[data-fancybox]").fancybox({
-        loop: true,
-        buttons: [
-            "zoom",
-            "share",
-            "slideShow",
-            "fullScreen",
-            "download",
-            "thumbs",
-            "close"
-        ]		
+      loop: true,
+      buttons: [
+        "zoom",
+        "share",
+        "slideShow",
+        "fullScreen",
+        "download",
+        "thumbs",
+        "close"
+      ]
     });
-});
+  });
 
 
   // bg video
-     const playButtonEl = document.getElementById('unique-play-button');
+  const playButtonEl = document.getElementById('unique-play-button');
   const mediaContainerEl = document.getElementById('unique-media-container');
   const initialImageEl = document.getElementById('unique-initial-image');
   const overlayEl = document.getElementById('unique-content-overlay');
@@ -525,6 +525,202 @@ document.getElementById("backToTopBtn").onclick = function() {
     });
   }
 });
+
+// Default image URL for the hotel lobby
+  // Variable name unchanged as it's a constant value
+  const DEFAULT_BG_URL = 'https://unsplash.com/photos/a-white-coupe-car-in-a-lobby-l1O9BqV3mSg/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzE4NzEyNjg1fA&force=true&w=1920';
+
+  // --- 1. Background Change Handler (Smooth Fade) ---
+  // Function name and parameters unchanged (good practice)
+  function changeDynamicBackground(newBgUrl, dynamicBg, isDefault = false) {
+    const targetUrl = isDefault ? DEFAULT_BG_URL : newBgUrl;
+    // Extracts the inner URL for reliable comparison
+    const currentBg = dynamicBg.style.backgroundImage.slice(5, -2);
+
+    if (currentBg !== targetUrl) {
+      // Fade out
+      dynamicBg.style.opacity = 0;
+
+      // Change the source and fade back in
+      setTimeout(() => {
+        dynamicBg.style.backgroundImage = `url('${targetUrl}')`;
+        dynamicBg.style.opacity = 1;
+      }, 500);
+    }
+  }
+
+  // --- 2. Get Active Slide Background URL ---
+  // Function name unchanged (good practice)
+  function getActiveSlideBgUrl(swiper) {
+    // swiper.slides is reliable
+    const activeSlide = swiper.slides[swiper.activeIndex];
+    return activeSlide ? activeSlide.getAttribute('data-bg-image') : DEFAULT_BG_URL;
+  }
+
+  // --- 3. Set Background to Active Slide ---
+  // Function name unchanged (good practice)
+  function setActiveSlideBackground(swiper, dynamicBg) {
+    const newBgUrl = getActiveSlideBgUrl(swiper);
+    changeDynamicBackground(newBgUrl, dynamicBg);
+  }
+
+    // Changed variable name and selector to the new class
+    const facilitySliderEl = document.querySelector('.facility-slider');
+    const dynamicBg = document.getElementById('dynamicBg');
+
+    // Set the initial default background
+    dynamicBg.style.backgroundImage = `url('${DEFAULT_BG_URL}')`;
+
+    const swiperOptions = {
+      // ... core options ...
+      slidesPerView: 1,
+      spaceBetween: 24,
+      loop: true,
+      centeredSlides: false,
+      speed: 1000,
+      autoplay: {
+        delay: 6000,
+        disableOnInteraction: false
+      },
+      // IMPORTANT: Swiper needs to know the custom class names for the wrapper and slides to apply internal styles and functionality correctly.
+      wrapperClass: 'facility-wrapper',
+      slideClass: 'facility-slide',
+
+      navigation: {
+        // Updated selectors for custom arrows
+        nextEl: facilitySliderEl.querySelector('.facility-next-arrow'),
+        prevEl: facilitySliderEl.querySelector('.facility-prev-arrow')
+      },
+      pagination: {
+        // Updated element selector to the new custom class
+        el: facilitySliderEl.querySelector('.facility-pagination'),
+        type: 'progressbar',
+        clickable: true
+      },
+      breakpoints: {
+        0: { slidesPerView: 2, spaceBetween: 15 },
+        576: { slidesPerView: 3, spaceBetween: 20 },
+        992: { slidesPerView: 4, spaceBetween: 30 },
+        1200: { slidesPerView: 5, spaceBetween: 30 },
+        1400: { slidesPerView: 6, spaceBetween: 30 }
+      },
+      on: {
+        init: function (swiper) {
+          apply3DEffect(swiper);
+          setActiveSlideBackground(swiper, dynamicBg);
+        },
+        slideChange: function (swiper) {
+          apply3DEffect(swiper);
+          setActiveSlideBackground(swiper, dynamicBg);
+        },
+        progress: function (swiper) {
+          apply3DEffect(swiper);
+        }
+      }
+    };
+
+    // Changed variable name
+    const facilitySwiper = new Swiper(facilitySliderEl, swiperOptions);
+
+    // ----------------------------------------
+    // --- HOVER BACKGROUND LOGIC (Refactored) ---
+    // ----------------------------------------
+
+    // Mouse over: Change BG to the hovered slide's image
+    // Used the new facilitySliderEl variable
+    facilitySliderEl.addEventListener('mouseover', function (e) {
+      // Changed selector to the new slide class
+      const hoveredSlide = e.target.closest('.facility-slide');
+      if (hoveredSlide) {
+        const hoverBgUrl = hoveredSlide.getAttribute('data-bg-image');
+        if (hoverBgUrl) {
+          changeDynamicBackground(hoverBgUrl, dynamicBg);
+        }
+      }
+    });
+
+    // Mouse leave: Revert BG back to the current active (centered) slide's image
+    // Used the new facilitySliderEl and facilitySwiper variables
+    facilitySliderEl.addEventListener('mouseleave', () => {
+      const activeBgUrl = getActiveSlideBgUrl(facilitySwiper);
+      changeDynamicBackground(activeBgUrl, dynamicBg);
+    });
+
+    // ----------------------------------------
+    // --- GSAP 3D Transform Effect (Unchanged logic) ---
+    // ----------------------------------------
+    function apply3DEffect(swiper) {
+      // Iterates over swiper.slides (internal Swiper array, not tied to a class name)
+      swiper.slides.forEach(slide => {
+        const slideProgress = slide.progress;
+        let rotate = slideProgress * 40;
+        let scale = 1 - Math.abs(slideProgress * 0.15);
+        let translateY = Math.abs(slideProgress * 50);
+
+        gsap.to(slide, {
+          duration: 0.5,
+          transform: `scale(${scale}) rotateZ(${rotate}deg) translateY(${translateY}px)`,
+          opacity: 1 - Math.abs(slideProgress * 0.3),
+          ease: "power1.out"
+        });
+      });
+    }
+
+    // --- GSAP Parallax Effect (Unchanged) ---
+    gsap.to(".dynamic-background", {
+      backgroundPositionY: "50%",
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".hotel-area",
+        scrub: true,
+        start: "top bottom",
+        end: "bottom top"
+      }
+    });
+
+    // --- Video Modal Functionality (Variable names changed for uniqueness) ---
+    const videoPlayButton = document.querySelector('.popup-video');
+    const videoModalBox = document.getElementById('videoModal');
+    const videoCloseModal = document.getElementById('closeModal');
+    const videoIframe = document.getElementById('youtubeIframe');
+
+    function getYouTubeEmbedUrl(url) {
+      let videoId = '';
+      try {
+        const urlObj = new URL(url);
+        if (urlObj.hostname.includes('youtube.com')) {
+          videoId = urlObj.searchParams.get('v');
+        } else if (urlObj.hostname.includes('youtu.be')) {
+          videoId = urlObj.pathname.substring(1);
+        }
+      } catch (e) { /* Invalid URL */ }
+
+      return videoId ? `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0` : '';
+    }
+
+    videoPlayButton.addEventListener('click', function (e) {
+      e.preventDefault();
+      const videoUrl = this.href;
+      const embedUrl = getYouTubeEmbedUrl(videoUrl);
+
+      if (embedUrl) {
+        videoIframe.src = embedUrl;
+        videoModalBox.classList.add('active');
+      }
+    });
+
+    videoCloseModal.addEventListener('click', function () {
+      videoIframe.src = '';
+      videoModalBox.classList.remove('active');
+    });
+
+    videoModalBox.addEventListener('click', function (e) {
+      if (e.target === videoModalBox) {
+        videoIframe.src = '';
+        videoModalBox.classList.remove('active');
+      }
+    });
+
 // --- Global State & Element References ---
 let adultCount = 1;
 let childCount = 0;
@@ -674,5 +870,5 @@ document.getElementById("villaBookingForm").addEventListener("submit", (e) => {
   }
 
 
- 
+
 });

@@ -157,7 +157,7 @@
 		</div>
 		<div class="footer-bottom2">
 			<div class="copyright-content">
-				<p>All rights reserved — 2025 © Stay Serene LLP</p>
+				<p>© Copyright 2025 Stay Serene LLP. All Right Reserves. Developed By Urban Web Creators</p>
 				<div class="footer-links">
 					<a href="rules-and-regulation.php">Rules and Regulation</a>
 					<a href="cancellation-policy.php">Cancellation Policy</a>

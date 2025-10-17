@@ -1,5 +1,5 @@
  <button id="backToTopBtn" title="Go to top">
-  &#9650; </button>
+  <img src="assets/images/thin-arrow.png" alt="" class="top-btn"> </button>
 <nav id="header">
     <section>
         <div class="top flex-between">

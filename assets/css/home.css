@@ -907,8 +907,10 @@ body {
 }
 
 .footer-links {
-  display: flex;
-  gap: 30px;
+    display: flex
+;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .footer-links a {
@@ -1243,7 +1245,7 @@ body {
   background: #fff;
   border: 2px solid #C49A4C;
   border-radius: 0 0 12px 12px;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
   max-height: 160px;
   overflow-y: auto;
@@ -1396,8 +1398,275 @@ body {
   z-index: 999;
 } */
 
+  /* --- Background and Overlay --- */
+        .hotel-area {
+            background-image: none !important;
+            position: relative;
+            z-index: 1;
+            padding-bottom: 120px;
+            min-height: 800px;
+            overflow: hidden;
+        }
 
+        /* Dynamic Background Layer (for smooth transition) */
+        .dynamic-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            opacity: 1;
+            /* Smoothness key: transition the opacity */
+            transition: opacity 0.5s ease-in-out;
+            z-index: 1;
+        }
 
+        /* Dark overlay for contrast */
+        .hotel-area::before {
+            background-color: #0000002b;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 15px;
+            position: relative;
+            z-index: 3;
+        }
+
+        /* Title Area Styling */
+        .title-area {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .sec-title {
+            color: #fff;
+            font-size: 3rem;
+            margin: 10px 0;
+            text-transform: uppercase;
+        }
+
+        /* --- Slider and 3D Effect Styling (Refactored) --- */
+        .slider-area {
+            padding-top: 50px;
+        }
+
+        /* New class for swiper-wrapper */
+        .facility-wrapper {
+            transform-style: preserve-3d;
+            perspective: 1200px;
+            padding: 20px 0;
+        }
+
+        /* New class for swiper-slide */
+        .facility-slide {
+            width: 250px;
+            height: auto;
+            opacity: 0.8;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        /* --- Hotel Card (Circular Design) --- */
+        .hotel-card {
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        /* ICON CONTAINER: The Circle */
+        .box-icon {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Image layer inside the circle */
+        .card-bg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.6);
+            transition: filter 0.3s ease-in-out;
+            z-index: 1;
+        }
+
+        /* ICON: Above the image */
+        .box-icon i {
+            font-size: 3.5rem;
+            color: #fff;
+            transition: color 0.3s;
+            z-index: 2;
+        }
+
+        /* Hover/Active State Styling (Refactored to use new slide class) */
+        .hotel-card:hover .box-icon,
+        /* Note: We MUST keep swiper-slide-active to target the active slide state added by Swiper, but use our custom slide class for the element */
+        .facility-slide.swiper-slide-active .hotel-card .box-icon {
+            border-color: #ff9900;
+            box-shadow: 0 0 20px rgba(255, 153, 0, 0.4);
+        }
+
+        .hotel-card:hover .card-bg-image,
+        .facility-slide.swiper-slide-active .hotel-card .card-bg-image {
+            filter: brightness(0.8);
+        }
+
+        .hotel-card:hover .box-icon i,
+        .facility-slide.swiper-slide-active .hotel-card .box-icon i {
+            color: #ff9900;
+        }
+
+        .box-title {
+            font-size: 1.1rem;
+            color: #fff;
+            margin: 0;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* --- Controller (Refactored) --- */
+        .slider-controller {
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Changed button classes for clarity, using facility-prev-arrow and facility-next-arrow */
+        .facility-prev-arrow,
+        .facility-next-arrow {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        /* New class for pagination container */
+        .facility-slider-pagination {
+            width: 250px;
+            height: 3px;
+            background-color: rgba(255, 255, 255, 0.3);
+            position: relative !important;
+            margin: 0;
+            top: auto !important;
+        }
+
+        /* Targeting the Swiper-injected fill element within the new pagination container */
+        .facility-slider-pagination .swiper-pagination-progressbar-fill {
+            background: #ff9900 !important;
+        }
+
+        /* Video Modal Styles (Hidden for brevity, assume they exist) */
+        .video-modal {
+            display: none;
+        }
+
+        .video-modal.active {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-modal-content {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            aspect-ratio: 16 / 9;
+        }
+
+        .video-modal-content iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-modal-close {
+            position: absolute;
+            top: -30px;
+            right: 0;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .play-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid white;
+            color: white;
+            text-decoration: none;
+            margin-top: 50px;
+        }
+
+        /* --- Media Queries --- */
+        @media (max-width: 991px) {
+            .hotel-area {
+                min-height: 600px;
+                padding-bottom: 80px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .sec-title {
+                font-size: 2rem;
+            }
+
+            .box-icon {
+                width: 100px;
+                height: 100px;
+            }
+
+            .box-icon i {
+                font-size: 2.5rem;
+            }
+        }
+.container2 {
+  position: relative;
+  z-index: 3;
+}
 .villa-card {
   background: #c49a4c;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -1588,10 +1857,13 @@ body {
 }
 
 .box-title {
-  font-size: 24px;
-  line-height: 1.417;
-  font-weight: 600;
-  margin-top: -0.24em
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #fff;
+    word-spacing: 2px;
 }
 
 .box-title a {
@@ -1899,6 +2171,9 @@ body {
   filter: invert(0);
 }
 
+.slider-arrow.slider-prev {
+  rotate: 180deg;
+}
 
 @media (max-width: 1600px) {
   nav section:nth-child(1) {
@@ -1995,6 +2270,9 @@ body {
   .banner-swiper {
     height: calc(100vh - 135px);
   }
+  .copyright-content {
+    gap: 24px;
+}
 }
 
 @media (max-width: 1200px) {
@@ -2133,6 +2411,32 @@ body {
 }
 
 @media (max-width: 850px) {
+   .banner-content h2 {
+    font-size: 32px;
+  }
+  .banner-content p {
+    font-size: 14px;
+    padding: 0 70px;
+}
+.banner-button-next, .banner-button-prev {
+    width: 60px;
+    height: 60px;
+}
+.banner-button-next::after, .banner-button-prev::after {
+    font-size: 18px;
+}
+
+.btn-primary:hover {
+    border-color: transparent;
+    color: var(--color-dark);
+}
+.btn-primary {
+    width: 173px!important;
+}
+.btn-primary, .btn-secondary {
+    font-size: 14px!important;
+    padding: 15px 11px!important;
+}
   .col_sm3_3 {
     width: 48%;
   }
@@ -2190,11 +2494,24 @@ body {
 
 /* Responsive Design */
 @media (max-width: 767px) {
+  .top-navigate {
+    flex-wrap: wrap;
+}
+      .banner-content h2 {
+        font-size: 24px;
+    }
   .banner {
     padding-top: 89px;
   }
-
-
+.banner-button-prev {
+    left: 15px;
+}
+.banner-button-next {
+  right: 15px;
+}
+.banner-content {
+    max-width: 500px;
+}
   #logo {
     height: 90px;
     padding: 2px 0 14px;
